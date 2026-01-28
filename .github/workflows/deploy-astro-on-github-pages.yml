@@ -1,0 +1,42 @@
+name: Deploy website on GitHub Pages
+
+on:
+  # Déclenchez le workflow à chaque fois que vous poussez vers la branche `main`
+  # Vous utilisez un nom de branche différent ? Remplacez `main` par le nom de votre branche.
+  push:
+    branches: [ master ]
+  # Vous permet d'exécuter ce workflow manuellement à partir de l'onglet Actions sur GitHub.
+  workflow_dispatch:
+
+# Autoriser cette tâche à cloner le dépôt et à créer un déploiement de page
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout git code
+        uses: actions/checkout@v5
+      - name: Install and build website
+        uses: withastro/action@v5
+        with:
+          path: .
+          node-version: 24
+          package-manager: npm@latest
+          # build-cmd: npm run build # La commande à exécuter pour compiler votre site. Exécute par défaut le script/la tâche de compilation du paquet. (facultatif)
+        # env:
+          # PUBLIC_POKEAPI: 'https://pokeapi.co/api/v2' # Utilisez des guillemets simples pour la valeur de la variable. (facultatif)
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy on GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
