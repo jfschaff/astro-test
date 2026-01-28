@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import baseUrl from "../../utils/baseUrl";
 const { showAll = true, limit = 6 } = Astro.props;
 
 const allStaff = await getCollection("staff", ({ data }) =>
@@ -24,7 +25,7 @@ const staffMembers = allStaff
           <!-- Foto (4:3) -->
           <div class="relative w-full pb-[100%]">
             <img
-              src={staff.data.image}
+              src={baseUrl + staff.data.image}
               alt={staff.data.name}
               class="absolute inset-0 w-full h-full object-cover object-center"
             />

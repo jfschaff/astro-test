@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHeader from "../components/Sections/PageHeader.astro";
 import Button from "../components/UI/Button.astro";
+import baseUrl from "../utils/baseUrl";
 ---
 
 <BaseLayout
@@ -11,7 +12,7 @@ import Button from "../components/UI/Button.astro";
   <PageHeader 
     title="Contact Us" 
     subtitle="We'd love to hear from you"
-    backgroundImage="/uploads/contact-header-bg.webp"
+    backgroundImage={`${baseUrl}/uploads/contact-header-bg.webp`}
   />
   
   <!-- Contact Information -->

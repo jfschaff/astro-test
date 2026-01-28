@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHeader from "../../components/Sections/PageHeader.astro";
 import { getCollection } from "astro:content";
+import baseUrl from "../../utils/baseUrl";
 
 // Fetch all ministries
 const all = await getCollection("ministries", ({ data }) =>
@@ -18,7 +19,7 @@ const ministries = all.sort((a, b) =>
   <PageHeader
     title="Our Ministries"
     subtitle="Ways to connect, grow, and serve"
-    backgroundImage="/uploads/ministries-header-bg.webp"
+    backgroundImage={`${baseUrl}/uploads/ministries-header-bg.webp`}
   />
 
   <!-- Ministries Grid -->
@@ -46,7 +47,7 @@ const ministries = all.sort((a, b) =>
             {m.data.logo && (
               <div class="w-full h-[200px] overflow-hidden">
                 <img
-                  src={m.data.logo}
+                  src={baseUrl + m.data.logo}
                   alt={m.data.name}
                   class="w-full h-full object-cover"
                 />
@@ -96,9 +97,7 @@ const ministries = all.sort((a, b) =>
   <!-- Volunteer CTA -->
   <section
     class="py-20 bg-cover bg-center text-white"
-    style="background-image:
-      linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-      url(/uploads/volunteer-bg.webp)"
+    style=`background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(${baseUrl}/uploads/volunteer-bg.webp)`
   >
     <div class="container mx-auto px-4">
       <div class="max-w-3xl mx-auto text-center">

@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import baseUrl from "../../utils/baseUrl";
 
 // Get the office hours from the siteInfo collection
 let officeHours;
@@ -16,26 +17,26 @@ const footerNavs = [
   {
     title: "À propos",
     items: [
-      { text: "L'EDS La Réunion", href: "/" },
-      { text: "À propos", href: "/about-us" },
-      { text: "Contact", href: "/contact" },
+      { text: "L'EDS La Réunion", href: `${baseUrl}/` },
+      { text: "À propos", href: `${baseUrl}/about-us` },
+      { text: "Contact", href: `${baseUrl}/contact` },
     ],
   },
   {
     title: "Ressources",
     items: [
       // { text: "Sermons", href: "/sermons" },
-      { text: "FAQ - Questions fréquentes", href: "/faq" },
-      { text: "Actualité", href: "/blog" },
-      { text: "Données disponibles", href: "/staff" },
-      { text: "Portail de transparence", href: "/ministries" },
+      { text: "FAQ - Questions fréquentes", href: `${baseUrl}/faq` },
+      { text: "Actualité", href: `${baseUrl}/blog` },
+      { text: "Données disponibles", href: `${baseUrl}/staff` },
+      { text: "Portail de transparence", href: `${baseUrl}/ministries` },
     ],
   },
   {
     title: "Règlementaire",
     items: [
-      { text: "Mentions légales", href: "/mentions-legales" },
-      { text: "Politique de confidentialité", href: "/politique-de-confidentialite" },
+      { text: "Mentions légales", href: `${baseUrl}/mentions-legales` },
+      { text: "Politique de confidentialité", href: `${baseUrl}/politique-de-confidentialite` },
     ],
   },
 ];

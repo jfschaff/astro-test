@@ -1,15 +1,17 @@
 ---
+import baseUrl from "../../utils/baseUrl";
+  
 // Define the navigation items
 const navItems = [
-  { text: "L'EDS La Réunion", href: "/" },
-  { text: "À propos", href: "/about-us" },
-  { text: "Données disponibles", href: "/staff" },
-  { text: "Portail de transparence", href: "/ministries" },
+  { text: "L'EDS La Réunion", href: `${baseUrl}/` },
+  { text: "À propos", href: `${baseUrl}/about-us` },
+  { text: "Données disponibles", href: `${baseUrl}/staff` },
+  { text: "Portail de transparence", href: `${baseUrl}/ministries` },
   // { text: "Sermons", href: "/sermons" },
   // { text: "Actualités", href: "/events" },
-  { text: "Actualités", href: "/blog" },
+  { text: "Actualités", href: `${baseUrl}/blog` },
   // { text: "I'm New", href: "/im-new" },
-  { text: "Contact", href: "/contact" },
+  { text: "Contact", href: `${baseUrl}/contact` },
   // { text: "Giving", href: "/giving" },
 ];
 

@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import Card from "../UI/Card.astro";
 import Button from "../UI/Button.astro";
 import { formatDate } from "../../utils/dateUtils";
+import baseUrl from '../../utils/baseUrl';
 
 export interface Props {
   count?: number;
@@ -37,7 +38,7 @@ const sermons = allSermons
           class="shadow-none"
           title={sermon.data.title}
           image={{
-            src: sermon.data.image || "/images/sermon-placeholder.webp",
+            src: baseUrl + sermon.data.image || "/images/sermon-placeholder.webp",
             alt: sermon.data.title
           }}
           href={`/sermons/${sermon.slug}`}

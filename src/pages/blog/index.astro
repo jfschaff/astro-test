@@ -4,6 +4,7 @@ import PageHeader from "../../components/Sections/PageHeader.astro";
 import Card from "../../components/UI/Card.astro";
 import { getCollection } from "astro:content";
 import { formatDate } from "../../utils/dateUtils";
+import baseUrl from "../../utils/baseUrl";
 
 // Get all blog posts
 const allPosts = await getCollection("blog", ({ data }) => {
@@ -26,7 +27,7 @@ const tags = [...new Set(posts.flatMap(post => post.data.tags))];
   <PageHeader 
     title="Blog" 
     subtitle="Insights, devotionals, and updates from our church community"
-    backgroundImage="/uploads/blog-header-bg.webp"
+    backgroundImage=`${baseUrl}/uploads/blog-header-bg.webp`
   />
   
   <!-- Blog Posts List -->
@@ -118,9 +119,9 @@ const tags = [...new Set(posts.flatMap(post => post.data.tags))];
             {posts.map((post) => (
               <Card
                 title={post.data.title}
-                image={post.data.image && {
-                  src: post.data.image.url,
-                  alt: post.data.image.alt
+                image={baseUrl + post.data.image && {
+                  src: baseUrl + post.data.image.url,
+                  alt: baseUrl + post.data.image.alt
                 }}
                 href={`/blog/${post.slug}`}
                 className="blog-card"

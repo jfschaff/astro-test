@@ -1,8 +1,10 @@
 ---
+import baseUrl from "../../utils/baseUrl";
+
 // Define the navigation items
 const navItems = [
-  { text: "un patient du CHU de La Réunion", href: "/" },
-  { text: "un professionnel", href: "/about-us" },
+  { text: "un patient du CHU de La Réunion", href: `${baseUrl}/` },
+  { text: "un professionnel", href: `${baseUrl}/about-us` },
 ];
 
 // Get the current URL path to highlight the active link
@@ -20,7 +22,7 @@ const currentPath = Astro.url.pathname;
     {
       navItems.map((item) => {
         const isActive = currentPath === item.href || 
-                         (item.href !== "/" && currentPath.startsWith(item.href));
+                         (item.href !== `${baseUrl}/` && currentPath.startsWith(item.href));
         
         return (
           <li>
@@ -65,7 +67,7 @@ const currentPath = Astro.url.pathname;
       {
         navItems.map((item) => {
           const isActive = currentPath === item.href || 
-                           (item.href !== "/" && currentPath.startsWith(item.href));
+                           (item.href !== `${baseUrl}/` && currentPath.startsWith(item.href));
           
           return (
             <a

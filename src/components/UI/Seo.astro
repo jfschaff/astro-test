@@ -1,4 +1,6 @@
 ---
+import baseUrl from '../../utils/baseUrl';
+
 export interface Props {
   title: string;
   description: string;
@@ -14,7 +16,7 @@ const {
   title,
   description,
   image = {
-    url: "/uploads/church-default.webp",
+    url: `${baseUrl}/uploads/church-default.webp`,
     alt: "Church Name",
   },
   type = "website",

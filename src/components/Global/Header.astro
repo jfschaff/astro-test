@@ -1,12 +1,13 @@
 ---
 import Navigation from "./Navigation.astro";
 import Navigation2 from "./Navigation2.astro";
+import baseUrl from "../../utils/baseUrl";
 ---
 
 <header class="sticky top-0 z-50 w-full bg-white shadow-sm">
   <div class="flex flex-col">
     <div class="mx-6 flex items-center justify-between h-28">
-      <a href="/" class="text-2xl font-bold text-primary-800 font-serif flex items-center">
+      <a href=`${baseUrl}/` class="text-2xl font-bold text-primary-800 font-serif flex items-center">
         <span class="sr-only">EDS La Réunion</span>
         <svg
           class="h-20 w-auto mr-2"

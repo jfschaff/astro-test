@@ -1,4 +1,6 @@
 ---
+import baseUrl from '../../utils/baseUrl';
+
 export interface Props {
   title: string;
   subtitle?: string;
@@ -8,7 +10,7 @@ export interface Props {
 const { 
   title, 
   subtitle, 
-  backgroundImage = "/uploads/page-header-bg.webp" 
+  backgroundImage = `${baseUrl}/uploads/page-header-bg.webp` 
 } = Astro.props;
 ---
 

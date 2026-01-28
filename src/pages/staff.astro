@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHeader from "../components/Sections/PageHeader.astro";
 import StaffList from "../components/Sections/StaffList.astro";
+import baseUrl from "../utils/baseUrl";
 ---
 
 <BaseLayout
@@ -11,7 +12,7 @@ import StaffList from "../components/Sections/StaffList.astro";
   <PageHeader 
     title="Our Staff" 
     subtitle="Meet our dedicated leadership team"
-    backgroundImage="/uploads/page-header-bg.webp"
+    backgroundImage={`${baseUrl}/uploads/page-header-bg.webp`}
   />
   
   <!-- Staff List -->
