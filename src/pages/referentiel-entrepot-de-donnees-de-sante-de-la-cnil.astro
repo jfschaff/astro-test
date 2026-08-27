@@ -1,18 +1,18 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import MinimalLayout from "../layouts/MinimalLayout.astro";
 ---
 
-<BaseLayout
+<MinimalLayout
   title="Référentiel relatif aux traitements de données à caractère personnel mis en œuvre à des fins de création d'entrepôts de données dans le domaine de la santé - CNIL"
   description="Référentiel de la CNIL relatif aux traitements de données à caractère personnel mis en œuvre à des fins de création d'entrepôts de données dans le domaine de la santé (entrepôts de données de santé)."
 >
-  <div class="container py-16">
+  <div class="py-16">
     <div class="max-w-3xl mx-auto">
-      <article class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-h2:text-2xl prose-p:text-gray-700 prose-li:text-gray-700 prose-strong:text-gray-900 prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline">
+      <article class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl prose-h4:text-lg prose-p:text-gray-700 prose-li:text-gray-700 prose-strong:text-gray-900 prose-a:text-primary-600 visited:prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline">
 
-        <h1 id="titre"><a href="#titre">RELATIF AUX TRAITEMENTS DE DONNÉES A CARACTÈRE PERSONNEL MIS EN ŒUVRE A DES FINS DE CRÉATION D’ENTREPÔTS DE DONNÉES DANS LE DOMAINE DE LA SANTÉ RÉFÉRENTIEL</a></h1>
+        <h1 id="titre"><a href="#titre">Référentiel relatif aux traitements de données à caractère personnel mis en œuvre à des fins de création d’entrepôts de données dans le domaine de la santé</a></h1>
 
-        <nav aria-label="Sommaire">
+        {/* <nav aria-label="Sommaire">
           <p><strong>Sommaire</strong></p>
           <ol>
             <li><a href="#1">1. À qui s’adresse ce référentiel ?</a></li>
@@ -29,7 +29,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <li><a href="#12">12. Transfert de données hors de l’Union européenne</a></li>
             <li><a href="#13">13. Analyse d’impact sur la protection des données</a></li>
           </ol>
-        </nav>
+        </nav> */}
 
         <section>
           <h2 id="1"><a href="#1">1. À qui s’adresse ce référentiel ?</a></h2>
@@ -60,7 +60,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
         <section>
           <h2 id="3"><a href="#3">3. Objectif(s) poursuivi(s) par le traitement (Finalités) et gouvernance</a></h2>
-          <p id="3.1"><a href="#3.1"><strong>3.1</strong></a> Les finalités couvertes par le référentiel</p>
+          <h3 id="3.1"><a href="#3.1">3.1 Les finalités couvertes par le référentiel</a></h3>
           <p id="3.1.1"><a href="#3.1.1"><strong>3.1.1</strong></a> Les entrepôts encadrés par le présent référentiel sont mis en œuvre afin de permettre la réutilisation des données qu’ils contiennent.</p>
           <p id="3.1.2"><a href="#3.1.2"><strong>3.1.2</strong></a> Lorsqu’ils sont mis en œuvre exclusivement à partir des données de l’entrepôt par les personnels habilités du responsable de traitement et pour son usage exclusif, les traitements répondant aux finalités suivantes peuvent être mis en œuvre dans le cadre de la déclaration de conformité au présent référentiel :</p>
           <ul>
@@ -71,7 +71,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           </ul>
           <p id="3.1.3"><a href="#3.1.3"><strong>3.1.3</strong></a> Les données peuvent également être réutilisées à des fins de recherche, d’étude ou d’évaluation dans le domaine de la santé. Ces traitements devront faire l’objet des formalités adéquates : s’ils sont conformes à une méthodologie de référence, ils peuvent être mis en œuvre à la condition que leur responsable adresse préalablement à la Commission une déclaration attestant de cette conformité. A défaut, ils devront solliciter une « autorisation recherche » sur le fondement de l’article 66.III de la loi « informatique et libertés ».</p>
           <p id="3.1.4"><a href="#3.1.4"><strong>3.1.4</strong></a> Les données contenues dans les traitements réalisés dans le cadre de ce référentiel ne peuvent être exploitées ni à des fins de promotion des produits mentionnés au II de l'article L. 5311-1 du code de la santé publique en direction de professionnels de santé ou d’établissements de santé, ni à des fins d'exclusion de garanties des contrats d'assurance, ni de modification de cotisations ou de primes d'assurance d'un individu ou d'un groupe d'individus présentant un même risque.</p>
-          <p id="3.2"><a href="#3.2"><strong>3.2</strong></a> La gouvernance de l’entrepôt</p>
+          <h3 id="3.2"><a href="#3.2">3.2 La gouvernance de l’entrepôt</a></h3>
           <p id="3.2.1"><a href="#3.2.1"><strong>3.2.1</strong></a> Afin de vérifier le respect des finalités poursuivies, le responsable de traitement met en œuvre une gouvernance pour chaque entrepôt qu’il constitue. Les instances constituées à cette fin peuvent être mutualisées si le responsable de traitement met en œuvre plusieurs entrepôts.</p>
           <p id="3.2.2"><a href="#3.2.2"><strong>3.2.2</strong></a> Une première instance (comité de pilotage ou équivalent) détermine les orientations stratégiques et scientifiques de l’entrepôt.</p>
           <p id="3.2.2.1"><a href="#3.2.2.1"><strong>3.2.2.1</strong></a> Il est de son ressort de tenir une liste exhaustive des données de l’entrepôt et de justifier de leur nécessité, dans la limite des données listées au 5.2 du présent référentiel.</p>
@@ -103,9 +103,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <li>des données qui figurent dans le dossier médical et administratif ou dossier unique informatisé de la personne concernée et dont la collecte est justifiée par sa prise en charge ; et/ou</li>
             <li>des données issues de projets de recherches, études et évaluations dans le domaine de la santé précédemment réalisés et dont leur durée de conservation n’a pas expiré.</li>
           </ul>
-          <p id="5.2"><a href="#5.2"><strong>5.2</strong></a> Les données pouvant être traitées incluent :</p>
-          <p id="5.2.1"><a href="#5.2.1"><strong>5.2.1</strong></a> Des données relatives aux patients :</p>
-          <p id="5.2.1.1"><a href="#5.2.1.1"><strong>5.2.1.1</strong></a> Données directement identifiantes et administratives relatives aux patients devant être conservées dans un espace distinct des autres données :</p>
+          <h3 id="5.2"><a href="#5.2">5.2 Les données pouvant être traitées incluent :</a></h3>
+          <h4 id="5.2.1"><a href="#5.2.1">5.2.1 Des données relatives aux patients :</a></h4>
+          <h5 id="5.2.1.1" class="text-base font-semibold text-gray-900"><a href="#5.2.1.1">5.2.1.1 Données directement identifiantes et administratives relatives aux patients devant être conservées dans un espace distinct des autres données :</a></h5>
           <ul>
             <li>nom, prénoms ;</li>
             <li>sexe, genre, civilité ;</li>
@@ -117,7 +117,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <li>numéro d’identifiant de l’épisode de soin (IEP) ;</li>
             <li>numéro d’identification au répertoire des personnes physiques – identifiant national de santé (NIR-INS).</li>
           </ul>
-          <p id="5.2.1.2"><a href="#5.2.1.2"><strong>5.2.1.2</strong></a> Autres catégories de données à caractère personnel, comprenant des données sensibles :</p>
+          <h5 id="5.2.1.2" class="text-base font-semibold text-gray-900"><a href="#5.2.1.2">5.2.1.2 Autres catégories de données à caractère personnel, comprenant des données sensibles :</a></h5>
           <ul>
             <li>poids, taille, comptes rendus (médicaux, RCP, etc.), résultats d'examens, résultats issus d'analyse d'échantillons biologiques, imagerie médicale, données relatives aux effets et événements indésirables ; prescriptions ; observations médicales et paramédicales ; données issues de dispositifs médicaux ou d’appareils de mesure et tout élément constitutif du dossier médical ;</li>
             <li>antécédents personnels ou familiaux, maladies ou événements associés ;</li>
@@ -137,7 +137,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <li>échelle de qualité de vie ou autres informations sur la qualité de vie de la personne ;</li>
             <li>exposition à des risques sanitaires connus (physiques, chimiques, biologiques et environnementaux, etc.).</li>
           </ul>
-          <p id="5.2.2"><a href="#5.2.2"><strong>5.2.2</strong></a> Des données relatives aux professionnels de santé</p>
+          <h4 id="5.2.2"><a href="#5.2.2">5.2.2 Des données relatives aux professionnels de santé</a></h4>
           <ul>
             <li>données d’identification : nom, prénom, titre ;</li>
             <li>fonction, service et unité d’exercice ;</li>
@@ -176,14 +176,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
         <section>
           <h2 id="8"><a href="#8">8. Information des personnes</a></h2>
-          <p id="8.1"><a href="#8.1"><strong>8.1</strong></a> L’information des patients :</p>
+          <h3 id="8.1"><a href="#8.1">8.1 L’information des patients :</a></h3>
           <p>Les personnes doivent être informées par le ou les responsables de traitement que les données collectées lors de leur prise en charge sont versées au sein de l’entrepôt.</p>
-          <p id="8.2"><a href="#8.2"><strong>8.2</strong></a> L’information relative à la constitution de l’entrepôt pour les données issues de dossiers médicaux</p>
+          <h3 id="8.2"><a href="#8.2">8.2 L’information relative à la constitution de l’entrepôt pour les données issues de dossiers médicaux</a></h3>
           <p id="8.2.1"><a href="#8.2.1"><strong>8.2.1</strong></a> Lors de la constitution d’un entrepôt, une première information relative à la constitution d’un entrepôt doit être transmise aux personnes concernées.</p>
-          <p id="8.2.2"><a href="#8.2.2"><strong>8.2.2</strong></a> Collecte des informations auprès des patients admis ou réadmis postérieurement à la constitution de l’entrepôt</p>
+          <h4 id="8.2.2"><a href="#8.2.2">8.2.2 Collecte des informations auprès des patients admis ou réadmis postérieurement à la constitution de l’entrepôt</a></h4>
           <p id="8.2.2.1"><a href="#8.2.2.1"><strong>8.2.2.1</strong></a> Les nouveaux patients ainsi que ceux en cours de suivi sont informés individuellement de la constitution de l’entrepôt (p.ex. : par courrier). Le ou les supports d’information utilisés comprennent l’ensemble des éléments prévus à l’article 13 du RGPD.</p>
           <p id="8.2.2.2"><a href="#8.2.2.2"><strong>8.2.2.2</strong></a> La réutilisation des données ainsi que les modalités d’exercice des droits d’accès et d’opposition doivent être particulièrement mises en avant dans la note d’information.</p>
-          <p id="8.2.3"><a href="#8.2.3"><strong>8.2.3</strong></a> Collecte des informations issues de dossiers de patients admis antérieurement à la constitution de l’entrepôt et n’étant plus suivis</p>
+          <h4 id="8.2.3"><a href="#8.2.3">8.2.3 Collecte des informations issues de dossiers de patients admis antérieurement à la constitution de l’entrepôt et n’étant plus suivis</a></h4>
           <p id="8.2.3.1"><a href="#8.2.3.1"><strong>8.2.3.1</strong></a> Les patients n’étant plus suivis sont informés individuellement de la constitution de l’entrepôt (p.ex. : par courrier). Le ou les supports d’information utilisés comprennent l’ensemble des éléments prévu à l’article 14 du RGPD.</p>
           <p id="8.2.3.2"><a href="#8.2.3.2"><strong>8.2.3.2</strong></a> Ces mentions d’information doivent intégrer la politique de protection des données à caractère personnel du responsable de traitement et être présentées dans une section dédiée.</p>
           <p id="8.2.3.3"><a href="#8.2.3.3"><strong>8.2.3.3</strong></a> La réutilisation des données ainsi que les modalités d’exercice des droits d’accès et d’opposition doivent faire l’objet d’une mise en avant spécifique dans la note d’information.</p>
@@ -202,11 +202,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <li>communiquant au sujet de l’entrepôt sur les réseaux sociaux, dans les médias régionaux, auprès des associations de patients ;</li>
             <li>diffusant un communiqué de presse informant de la mise en place de l’entrepôt.</li>
           </ul>
-          <p id="8.3"><a href="#8.3"><strong>8.3</strong></a> L’information relative à l’intégration dans l’entrepôt de données issues de la recherche</p>
+          <h3 id="8.3"><a href="#8.3">8.3 L’information relative à l’intégration dans l’entrepôt de données issues de la recherche</a></h3>
           <p id="8.3.1"><a href="#8.3.1"><strong>8.3.1</strong></a> Si l’entrepôt intègre des données issues de recherches, les personnes concernées doivent être informées individuellement de la réutilisation des données issues de la recherche afin de constituer un entrepôt conformément aux dispositions de l’article 14 du RGPD. Dans cette hypothèse, le recours à l’exception à l’information individuelle est possible, dans les conditions mentionnées aux points 8.2.3.4 à 8.2.3.6.</p>
           <p id="8.3.2"><a href="#8.3.2"><strong>8.3.2</strong></a> Seules des données issues de traitements dont la durée de conservation n’a pas expiré pourront être intégrées dans l’entrepôt de données de santé.</p>
           <p id="8.4"><a href="#8.4"><strong>8.4</strong></a> Les personnes concernées doivent en outre être informées de chacune des réutilisations des données la concernant à des fins de recherche, d’étude ou d’évaluation, sauf lorsque les responsables de traitement se trouvent dans l’impossibilité de réaliser l’information ou qu’elle exigerait des efforts disproportionnés.</p>
-          <p id="8.5"><a href="#8.5"><strong>8.5</strong></a> L’information des professionnels</p>
+          <h3 id="8.5"><a href="#8.5">8.5 L’information des professionnels</a></h3>
           <p id="8.5.1"><a href="#8.5.1"><strong>8.5.1</strong></a> Concernant l’information des professionnels exerçant au sein des établissements du responsable de traitement postérieurement à la mise en œuvre de l’entrepôt :</p>
           <p>Les professionnels dont les données sont versées dans l’entrepôt doivent être informés individuellement et par écrit des mentions prévues par l’article 13 du RGPD.</p>
           <p>Si le responsable de traitement est l’employeur des professionnels, la fiche d’information pourra prendre la forme d’un courrier ou d’un courriel joint au bulletin de paie ou au contrat de travail. L’information devra également être diffusée en commission ou conférence médicale d’établissement, sur l’intranet de celui-ci et à l’aide d’affiches dans les lieux de repos des personnels.</p>
@@ -345,7 +345,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <section>
           <h2 id="13"><a href="#13">13. Analyse d’impact sur la protection des données</a></h2>
           <p id="13.1"><a href="#13.1"><strong>13.1</strong></a> Le responsable de traitement doit réaliser et documenter une analyse d’impact sur la protection des données.</p>
-          <p id="13.2"><a href="#13.2"><strong>13.2</strong></a> Á cette fin, le responsable de traitement pourra se reporter :</p>
+          <p id="13.2"><a href="#13.2"><strong>13.2</strong></a> À cette fin, le responsable de traitement pourra se reporter :</p>
           <ul>
             <li>aux principes contenus dans ce référentiel ;</li>
             <li>aux outils méthodologiques proposés par la Commission sur son site web.</li>
@@ -371,4 +371,4 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </article>
     </div>
   </div>
-</BaseLayout>
+</MinimalLayout>
