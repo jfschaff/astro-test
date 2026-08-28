@@ -12,28 +12,9 @@ import MinimalLayout from "../layouts/MinimalLayout.astro";
       <article class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl prose-h4:text-lg prose-p:text-gray-700 prose-li:text-gray-700 prose-strong:text-[inherit] prose-a:text-gray-900 prose-a:underline prose-a:decoration-dotted prose-a:decoration-gray-400 prose-a:underline-offset-4 hover:prose-a:text-primary-600 hover:prose-a:decoration-primary-600">
         <h1 id="titre"><a href="#titre" class="not-prose text-primary-600 no-underline hover:underline">Référentiel relatif aux traitements de données à caractère personnel mis en œuvre à des fins de création d’entrepôts de données dans le domaine de la santé</a></h1>
 
-        {/* <nav aria-label="Sommaire">
-          <p><strong>Sommaire</strong></p>
-          <ol>
-            <li><a href="#1">1. À qui s’adresse ce référentiel ?</a></li>
-            <li><a href="#2">2. Portée du référentiel</a></li>
-            <li><a href="#3">3. Objectif(s) poursuivi(s) par le traitement (Finalités) et gouvernance</a></li>
-            <li><a href="#4">4. Base(s) légale(s) du traitement</a></li>
-            <li><a href="#5">5. Données à caractère personnel pouvant être incluses dans l’entrepôt</a></li>
-            <li><a href="#6">6. Accès aux informations</a></li>
-            <li><a href="#7">7. Durées de conservation</a></li>
-            <li><a href="#8">8. Information des personnes</a></li>
-            <li><a href="#9">9. Droits des personnes</a></li>
-            <li><a href="#10">10. Sécurité</a></li>
-            <li><a href="#11">11. Sous-traitants</a></li>
-            <li><a href="#12">12. Transfert de données hors de l’Union européenne</a></li>
-            <li><a href="#13">13. Analyse d’impact sur la protection des données</a></li>
-          </ol>
-        </nav> */}
-
-        <div class="rounded-lg border border-gray-200 p-5">
-          <p class="text-sm  text-gray-700 m-0">
-            Cette page est une transcription du référentiel EDS de la CNIL au format HTML. L'original est disponible 
+        <div class="rounded-lg border border-violet-300 bg-violet-100 p-5">
+          <p class="text-sm text-gray-900 m-0">
+            Cette page est une transcription du « référentiel EDS » de la CNIL au format HTML. L'original est disponible 
             <a href="https://www.cnil.fr/fr/la-cnil-adopte-un-referentiel-sur-les-entrepots-de-donnees-de-sante" target="_blank" rel="noopener noreferrer" class="text-gray-900 underline decoration-dotted decoration-gray-400 underline-offset-4 hover:text-primary-600 hover:decoration-primary-600">sur le site de la CNIL au format PDF</a>.
             Cette transcription se veut la plus fidèle possible mais peut comporter des erreurs.
           </p>
@@ -57,9 +38,13 @@ import MinimalLayout from "../layouts/MinimalLayout.astro";
           <h2 id="2"><a href="#2" class="not-prose text-primary-600 no-underline hover:underline">2. Portée du référentiel</a></h2>
           <p id="2.1"><a href="#2.1"><strong>2.1</strong></a> Ce référentiel précise le cadre juridique, issu du règlement général sur la protection des données (RGPD) et des dispositions nationales, applicable aux entrepôts de données de santé.</p>
           <p id="2.2"><a href="#2.2"><strong>2.2</strong></a> Les responsables de traitement qui réalisent auprès de la Commission une déclaration de conformité au présent référentiel sont autorisés à mettre en œuvre un entrepôt de données de santé lorsque le traitement est strictement conforme au référentiel.</p>
-          <p>Pour déclarer sa conformité au référentiel : « Déclarer un fichier » - rubrique « déclaration de conformité »</p>
+          <div class="rounded-lg border border-primary-300 bg-primary-100 p-5">
+            <p class="m-0 text-center"><strong>Pour déclarer sa conformité au référentiel :</strong><br />« <a href="https://www.cnil.fr/fr/declarer-un-fichier" target="_blank" rel="noopener noreferrer">Déclarer un fichier</a> » - rubrique « déclaration de conformité »</p>
+          </div>
           <p id="2.3"><a href="#2.3"><strong>2.3</strong></a> Tout traitement de données à caractère personnel visant à mettre en œuvre un entrepôt de données de santé qui ne respecte pas l’ensemble des exigences définies par le présent référentiel doit faire l’objet d’une demande d’autorisation spécifique, conformément aux dispositions de l’article 66 III de la loi « informatique et libertés ».</p>
-          <p>Pour demander une autorisation : « Déclarer un fichier » - rubrique « demande d’autorisation santé – finalité d’intérêt public »</p>
+          <div class="rounded-lg border border-primary-300 bg-primary-100 p-5">
+            <p class="m-0 text-center"><strong>Pour demander une autorisation :</strong><br />« <a href="https://www.cnil.fr/fr/declarer-un-fichier" target="_blank" rel="noopener noreferrer">Déclarer un fichier</a> » - rubrique « demande d’autorisation santé – finalité d’intérêt public »</p>
+          </div>
           <p id="2.4"><a href="#2.4"><strong>2.4</strong></a> Les responsables de traitement doivent mettre en œuvre toutes les mesures appropriées (techniques et organisationnelles) afin de garantir la protection des données à caractère personnel traitées, à la fois dès la conception du traitement et par défaut, comme prévu à l’article 25 du RGPD. Ils doivent, en outre, démontrer cette conformité tout au long de la vie des traitements. Les entrepôts mis en œuvre dans le cadre du référentiel doivent également être inscrits dans le registre des activités de traitement prévu à l’article 30 du RGPD.</p>
           <p id="2.5"><a href="#2.5"><strong>2.5</strong></a> Les principes posés dans ce référentiel constituent également une aide à la réalisation de l’analyse d’impact à la protection des données (AIPD) que les responsables de traitement concernés doivent mener (v. point <a href="#13">13</a> du présent référentiel).</p>
           <p id="2.6"><a href="#2.6"><strong>2.6</strong></a> En application de l’article 65.1 de la loi « informatique et libertés », les entrepôts mis en œuvre après recueil du consentement conforme à l’article 7 du RGPD sur la base de l’article 9.2.a du RGPD de chacune des personnes concernées ne sont pas soumis à une autorisation préalable de la Commission ni à une déclaration de conformité au présent référentiel. La Commission rappelle toutefois que les principes et les mesures posés par le présent référentiel peuvent s’appliquer à l’ensemble des traitements de données de santé de même nature, indépendamment de leur encadrement juridique.</p>
@@ -67,8 +52,8 @@ import MinimalLayout from "../layouts/MinimalLayout.astro";
         </section>
 
         <section>
-          <h2 id="3"><a href="#3" class="not-prose text-primary-600 no-underline hover:underline">3. Objectif(s) poursuivi(s) par le traitement (Finalités) et gouvernance</a></h2>
-          <h3 id="3.1"><a href="#3.1" class="not-prose text-primary-600 no-underline hover:underline">3.1 Les finalités couvertes par le référentiel</a></h3>
+          <h2 id="3" data-toc-label="3. Finalités et gouvernance"><a href="#3" class="not-prose text-primary-600 no-underline hover:underline">3. Objectif(s) poursuivi(s) par le traitement (Finalités) et gouvernance</a></h2>
+          <h3 id="3.1" data-toc-label="3.1 Finalités couvertes par le référentiel"><a href="#3.1" class="not-prose text-primary-600 no-underline hover:underline">3.1 Les finalités couvertes par le référentiel</a></h3>
           <p id="3.1.1"><a href="#3.1.1"><strong>3.1.1</strong></a> Les entrepôts encadrés par le présent référentiel sont mis en œuvre afin de permettre la réutilisation des données qu’ils contiennent.</p>
           <p id="3.1.2"><a href="#3.1.2"><strong>3.1.2</strong></a> Lorsqu’ils sont mis en œuvre exclusivement à partir des données de l’entrepôt par les personnels habilités du responsable de traitement et pour son usage exclusif, les traitements répondant aux finalités suivantes peuvent être mis en œuvre dans le cadre de la déclaration de conformité au présent référentiel :</p>
           <ul>
@@ -79,7 +64,7 @@ import MinimalLayout from "../layouts/MinimalLayout.astro";
           </ul>
           <p id="3.1.3"><a href="#3.1.3"><strong>3.1.3</strong></a> Les données peuvent également être réutilisées à des fins de recherche, d’étude ou d’évaluation dans le domaine de la santé. Ces traitements devront faire l’objet des formalités adéquates : s’ils sont conformes à une méthodologie de référence, ils peuvent être mis en œuvre à la condition que leur responsable adresse préalablement à la Commission une déclaration attestant de cette conformité. A défaut, ils devront solliciter une « autorisation recherche » sur le fondement de l’article 66.III de la loi « informatique et libertés ».</p>
           <p id="3.1.4"><a href="#3.1.4"><strong>3.1.4</strong></a> Les données contenues dans les traitements réalisés dans le cadre de ce référentiel ne peuvent être exploitées ni à des fins de promotion des produits mentionnés au II de l'article L. 5311-1 du code de la santé publique en direction de professionnels de santé ou d’établissements de santé, ni à des fins d'exclusion de garanties des contrats d'assurance, ni de modification de cotisations ou de primes d'assurance d'un individu ou d'un groupe d'individus présentant un même risque.</p>
-          <h3 id="3.2"><a href="#3.2" class="not-prose text-primary-600 no-underline hover:underline">3.2 La gouvernance de l’entrepôt</a></h3>
+          <h3 id="3.2" data-toc-label="3.2 Gouvernance de l’entrepôt"><a href="#3.2" class="not-prose text-primary-600 no-underline hover:underline">3.2 La gouvernance de l’entrepôt</a></h3>
           <p id="3.2.1"><a href="#3.2.1"><strong>3.2.1</strong></a> Afin de vérifier le respect des finalités poursuivies, le responsable de traitement met en œuvre une gouvernance pour chaque entrepôt qu’il constitue. Les instances constituées à cette fin peuvent être mutualisées si le responsable de traitement met en œuvre plusieurs entrepôts.</p>
           <p id="3.2.2"><a href="#3.2.2"><strong>3.2.2</strong></a> Une première instance (comité de pilotage ou équivalent) détermine les orientations stratégiques et scientifiques de l’entrepôt.</p>
           <p id="3.2.2.1"><a href="#3.2.2.1"><strong>3.2.2.1</strong></a> Il est de son ressort de tenir une liste exhaustive des données de l’entrepôt et de justifier de leur nécessité, dans la limite des données listées au <a href="#5.2">5.2</a> du présent référentiel.</p>
@@ -111,8 +96,8 @@ import MinimalLayout from "../layouts/MinimalLayout.astro";
             <li>des données qui figurent dans le dossier médical et administratif ou dossier unique informatisé de la personne concernée et dont la collecte est justifiée par sa prise en charge ; et/ou</li>
             <li>des données issues de projets de recherches, études et évaluations dans le domaine de la santé précédemment réalisés et dont leur durée de conservation n’a pas expiré.</li>
           </ul>
-          <h3 id="5.2"><a href="#5.2" class="not-prose text-primary-600 no-underline hover:underline">5.2 Les données pouvant être traitées incluent :</a></h3>
-          <h4 id="5.2.1"><a href="#5.2.1" class="not-prose text-primary-600 no-underline hover:underline">5.2.1 Des données relatives aux patients :</a></h4>
+          <h3 id="5.2" data-toc-label="5.2 Données pouvant être traitées"><a href="#5.2" class="not-prose text-primary-600 no-underline hover:underline">5.2 Les données pouvant être traitées incluent :</a></h3>
+          <h4 id="5.2.1" data-toc="skip"><a href="#5.2.1" class="not-prose text-primary-600 no-underline hover:underline">5.2.1 Des données relatives aux patients :</a></h4>
           <p id="5.2.1.1"><a href="#5.2.1.1"><strong>5.2.1.1</strong></a> Données directement identifiantes et administratives relatives aux patients devant être conservées dans un espace distinct des autres données :</p>
           <ul>
             <li>nom, prénoms ;</li>
@@ -184,14 +169,14 @@ import MinimalLayout from "../layouts/MinimalLayout.astro";
 
         <section>
           <h2 id="8"><a href="#8" class="not-prose text-primary-600 no-underline hover:underline">8. Information des personnes</a></h2>
-          <h3 id="8.1"><a href="#8.1" class="not-prose text-primary-600 no-underline hover:underline">8.1 L’information des patients :</a></h3>
+          <h3 id="8.1" data-toc-label="8.1 Information des patients"><a href="#8.1" class="not-prose text-primary-600 no-underline hover:underline">8.1 L’information des patients :</a></h3>
           <p>Les personnes doivent être informées par le ou les responsables de traitement que les données collectées lors de leur prise en charge sont versées au sein de l’entrepôt.</p>
-          <h3 id="8.2"><a href="#8.2" class="not-prose text-primary-600 no-underline hover:underline">8.2 L’information relative à la constitution de l’entrepôt pour les données issues de dossiers médicaux</a></h3>
+          <h3 id="8.2" data-toc-label="8.2 Information pour les données issues de dossiers médicaux"><a href="#8.2" class="not-prose text-primary-600 no-underline hover:underline">8.2 L’information relative à la constitution de l’entrepôt pour les données issues de dossiers médicaux</a></h3>
           <p id="8.2.1"><a href="#8.2.1"><strong>8.2.1</strong></a> Lors de la constitution d’un entrepôt, une première information relative à la constitution d’un entrepôt doit être transmise aux personnes concernées.</p>
-          <h4 id="8.2.2"><a href="#8.2.2" class="not-prose text-primary-600 no-underline hover:underline">8.2.2 Collecte des informations auprès des patients admis ou réadmis postérieurement à la constitution de l’entrepôt</a></h4>
+          <h4 id="8.2.2" data-toc="skip"><a href="#8.2.2" class="not-prose text-primary-600 no-underline hover:underline">8.2.2 Collecte des informations auprès des patients admis ou réadmis postérieurement à la constitution de l’entrepôt</a></h4>
           <p id="8.2.2.1"><a href="#8.2.2.1"><strong>8.2.2.1</strong></a> Les nouveaux patients ainsi que ceux en cours de suivi sont informés individuellement de la constitution de l’entrepôt (p.ex. : par courrier). Le ou les supports d’information utilisés comprennent l’ensemble des éléments prévus à l’article 13 du RGPD.</p>
           <p id="8.2.2.2"><a href="#8.2.2.2"><strong>8.2.2.2</strong></a> La réutilisation des données ainsi que les modalités d’exercice des droits d’accès et d’opposition doivent être particulièrement mises en avant dans la note d’information.</p>
-          <h4 id="8.2.3"><a href="#8.2.3" class="not-prose text-primary-600 no-underline hover:underline">8.2.3 Collecte des informations issues de dossiers de patients admis antérieurement à la constitution de l’entrepôt et n’étant plus suivis</a></h4>
+          <h4 id="8.2.3" data-toc="skip"><a href="#8.2.3" class="not-prose text-primary-600 no-underline hover:underline">8.2.3 Collecte des informations issues de dossiers de patients admis antérieurement à la constitution de l’entrepôt et n’étant plus suivis</a></h4>
           <p id="8.2.3.1"><a href="#8.2.3.1"><strong>8.2.3.1</strong></a> Les patients n’étant plus suivis sont informés individuellement de la constitution de l’entrepôt (p.ex. : par courrier). Le ou les supports d’information utilisés comprennent l’ensemble des éléments prévu à l’article 14 du RGPD.</p>
           <p id="8.2.3.2"><a href="#8.2.3.2"><strong>8.2.3.2</strong></a> Ces mentions d’information doivent intégrer la politique de protection des données à caractère personnel du responsable de traitement et être présentées dans une section dédiée.</p>
           <p id="8.2.3.3"><a href="#8.2.3.3"><strong>8.2.3.3</strong></a> La réutilisation des données ainsi que les modalités d’exercice des droits d’accès et d’opposition doivent faire l’objet d’une mise en avant spécifique dans la note d’information.</p>
@@ -210,11 +195,11 @@ import MinimalLayout from "../layouts/MinimalLayout.astro";
             <li>communiquant au sujet de l’entrepôt sur les réseaux sociaux, dans les médias régionaux, auprès des associations de patients ;</li>
             <li>diffusant un communiqué de presse informant de la mise en place de l’entrepôt.</li>
           </ul>
-          <h3 id="8.3"><a href="#8.3" class="not-prose text-primary-600 no-underline hover:underline">8.3 L’information relative à l’intégration dans l’entrepôt de données issues de la recherche</a></h3>
+          <h3 id="8.3" data-toc-label="8.3 Information pour des données issues de la recherche"><a href="#8.3" class="not-prose text-primary-600 no-underline hover:underline">8.3 L’information relative à l’intégration dans l’entrepôt de données issues de la recherche</a></h3>
           <p id="8.3.1"><a href="#8.3.1"><strong>8.3.1</strong></a> Si l’entrepôt intègre des données issues de recherches, les personnes concernées doivent être informées individuellement de la réutilisation des données issues de la recherche afin de constituer un entrepôt conformément aux dispositions de l’article 14 du RGPD. Dans cette hypothèse, le recours à l’exception à l’information individuelle est possible, dans les conditions mentionnées aux points <a href="#8.2.3.4">8.2.3.4</a> à <a href="#8.2.3.6">8.2.3.6</a>.</p>
           <p id="8.3.2"><a href="#8.3.2"><strong>8.3.2</strong></a> Seules des données issues de traitements dont la durée de conservation n’a pas expiré pourront être intégrées dans l’entrepôt de données de santé.</p>
           <p id="8.4"><a href="#8.4"><strong>8.4</strong></a> Les personnes concernées doivent en outre être informées de chacune des réutilisations des données la concernant à des fins de recherche, d’étude ou d’évaluation, sauf lorsque les responsables de traitement se trouvent dans l’impossibilité de réaliser l’information ou qu’elle exigerait des efforts disproportionnés.</p>
-          <h3 id="8.5"><a href="#8.5" class="not-prose text-primary-600 no-underline hover:underline">8.5 L’information des professionnels</a></h3>
+          <h3 id="8.5" data-toc-label="8.5 Information des professionnels"><a href="#8.5" class="not-prose text-primary-600 no-underline hover:underline">8.5 L’information des professionnels</a></h3>
           <p id="8.5.1"><a href="#8.5.1"><strong>8.5.1</strong></a> Concernant l’information des professionnels exerçant au sein des établissements du responsable de traitement postérieurement à la mise en œuvre de l’entrepôt :</p>
           <p>Les professionnels dont les données sont versées dans l’entrepôt doivent être informés individuellement et par écrit des mentions prévues par l’article 13 du RGPD.</p>
           <p>Si le responsable de traitement est l’employeur des professionnels, la fiche d’information pourra prendre la forme d’un courrier ou d’un courriel joint au bulletin de paie ou au contrat de travail. L’information devra également être diffusée en commission ou conférence médicale d’établissement, sur l’intranet de celui-ci et à l’aide d’affiches dans les lieux de repos des personnels.</p>
@@ -264,7 +249,7 @@ import MinimalLayout from "../layouts/MinimalLayout.astro";
           <p id="SEC-ALI-1"><a href="#SEC-ALI-1"><strong>SEC-ALI-1</strong></a> Les circuits de collecte des données doivent faire l’objet de mesures de sécurité appropriées, en particulier la purge régulière des répertoires de transit et un contrôle d’accès strict aux données collectées.</p>
           <p id="SEC-ALI-2"><a href="#SEC-ALI-2"><strong>SEC-ALI-2</strong></a> Dans le cas où l’entrepôt est alimenté manuellement via des logiciels de saisie autorisant également la consultation des données saisies, les accès à ces logiciels doivent être sécurisés via une authentification forte conforme à l’exigence <a href="#SEC-AUT-1">SEC-AUT-1</a>.</p>
 
-          <h4 id="pseudonymisation-donnees"><a href="#pseudonymisation-donnees" class="not-prose text-primary-600 no-underline hover:underline">Pseudonymisation des données</a></h3>
+          <h4 id="pseudonymisation-donnees"><a href="#pseudonymisation-donnees" class="not-prose text-primary-600 no-underline hover:underline">Pseudonymisation des données</a></h4>
           <p id="SEC-PSE-1"><a href="#SEC-PSE-1"><strong>SEC-PSE-1</strong></a> Aucun numéro interne, tel qu’un numéro de dossier patient ne peut être directement réutilisé comme identifiant au sein de l’entrepôt. Seul un identifiant pseudonyme unique peut être utilisé, permettant le cas échéant la correspondance entre les données pseudonymisées stockées dans l’entrepôt et des données directement identifiantes. Cet identifiant doit être dédié à un seul entrepôt. Il doit être généré par une fonction de hachage cryptographique résistante aux attaques par force brute ou un générateur de nombres pseudo-aléatoires cryptographiquement sûr. Les données doivent être pseudonymisées préalablement à leur intégration dans l’entrepôt.</p>
           <p id="SEC-PSE-2"><a href="#SEC-PSE-2"><strong>SEC-PSE-2</strong></a> Dans le cas où l’entrepôt intègre des jeux de données existants déjà pseudonymisés, un nouveau numéro pseudonyme unique respectant les conditions de l’exigence <a href="#SEC-PSE-1">SEC-PSE-1</a> doit être généré lors de l’alimentation de l’entrepôt.</p>
           <p id="SEC-PSE-3"><a href="#SEC-PSE-3"><strong>SEC-PSE-3</strong></a> Dans le cas où des données relatives aux professionnels de santé sont collectées, le responsable de traitement doit pseudonymiser ces données.</p>
@@ -314,8 +299,8 @@ import MinimalLayout from "../layouts/MinimalLayout.astro";
           <p id="SEC-JOU-2"><a href="#SEC-JOU-2"><strong>SEC-JOU-2</strong></a> Les accès des ingénieurs et administrateurs système et réseau doivent être effectués à travers un système spécifique assurant une authentification forte ainsi que la traçabilité détaillée des accès et actions réalisés. Par exemple, un bastion d’administration peut être utilisé pour contrôler les accès et enregistrer les sessions.</p>
           <p id="SEC-JOU-3"><a href="#SEC-JOU-3"><strong>SEC-JOU-3</strong></a> Un contrôle des traces doit être réalisé régulièrement et a minima bimestriellement, ainsi qu’à la fin de chaque période d’habilitation liée à un projet de recherche. Ce contrôle doit être réalisé par :</p>
           <ul>
-            <li>- une solution réalisant une surveillance automatique avec une remontée d’alertes traitées manuellement par un opérateur habilité ;</li>
-            <li>- ou par un contrôle semi-automatique via exécution de programmes permettant une sélection des traces anormales, suivi d’une relecture manuelle par un opérateur habilité.</li>
+            <li>une solution réalisant une surveillance automatique avec une remontée d’alertes traitées manuellement par un opérateur habilité ;</li>
+            <li>ou par un contrôle semi-automatique via exécution de programmes permettant une sélection des traces anormales, suivi d’une relecture manuelle par un opérateur habilité.</li>
           </ul>
           <p id="SEC-JOU-4"><a href="#SEC-JOU-4"><strong>SEC-JOU-4</strong></a> Les traces de journalisation définies aux exigences <a href="#SEC-JOU-1">SEC-JOU-1</a> et <a href="#SEC-JOU-2">SEC-JOU-2</a> doivent être conservées pendant une durée de comprise entre 6 mois et un an.</p>
 
@@ -345,13 +330,13 @@ import MinimalLayout from "../layouts/MinimalLayout.astro";
         </section>
 
         <section>
-          <h2 id="12"><a href="#12" class="not-prose text-primary-600 no-underline hover:underline">12. Transfert de données hors de l’Union européenne</a></h2>
+          <h2 id="12" data-toc-label="12. Transferts hors UE"><a href="#12" class="not-prose text-primary-600 no-underline hover:underline">12. Transfert de données hors de l’Union européenne</a></h2>
           <p id="12.1"><a href="#12.1"><strong>12.1</strong></a> Est considéré comme transfert tout accès distant aux données depuis l’extérieur du territoire européen.</p>
           <p id="12.2"><a href="#12.2"><strong>12.2</strong></a> La mise en place et le fonctionnement d’un entrepôt ne peuvent entrainer le transfert de données à caractère personnel, directement ou indirectement identifiantes hors de l’Union européenne ou à destination d’un pays ne disposant pas d’un niveau de protection adéquat.</p>
         </section>
 
         <section>
-          <h2 id="13"><a href="#13" class="not-prose text-primary-600 no-underline hover:underline">13. Analyse d’impact sur la protection des données</a></h2>
+          <h2 id="13" data-toc-label="13. AIPD"><a href="#13" class="not-prose text-primary-600 no-underline hover:underline">13. Analyse d'impact sur la protection des données</a></h2>
           <p id="13.1"><a href="#13.1"><strong>13.1</strong></a> Le responsable de traitement doit réaliser et documenter une analyse d’impact sur la protection des données.</p>
           <p id="13.2"><a href="#13.2"><strong>13.2</strong></a> À cette fin, le responsable de traitement pourra se reporter :</p>
           <ul>
@@ -360,22 +345,338 @@ import MinimalLayout from "../layouts/MinimalLayout.astro";
           </ul>
           <p id="13.3"><a href="#13.3"><strong>13.3</strong></a> Le cas échéant, le responsable de traitement pourra élaborer une procédure relative à l’AIPD permettant d’impliquer les acteurs et les personnes pertinentes pour sa réalisation, notamment le délégué à la protection des données (DPD/DPO) qui devra être consulté.</p>
           <p id="13.4"><a href="#13.4"><strong>13.4</strong></a> L’AIPD devra être réexaminée et mise à jour régulièrement, notamment si des changements importants sont prévus dans le traitement ou si les risques pour les personnes concernées ont évolué (comme la poursuite d’une finalité supplémentaire, le recours à un nouveau sous-traitant, de nouvelles données collectées, une fuite de données permettant la réidentification, etc.).</p>
-          <p>»</p>
         </section>
 
-        <hr />
+        <hr/>
 
         <section id="notes">
-          <h3 id="notes-titre"><a href="#notes-titre" class="not-prose text-primary-600 no-underline hover:underline">Notes</a></h3>
-          <ol>
-            <li id="fn1"><a href="#fn1-ref">↑</a> Le PMSI local correspond au PMSI de l’établissement, sauf dans le cas d’un GHT dans lequel l’établissement chef de file pourrait disposer du PMSI du GHT.</li>
-            <li id="fn2"><a href="#fn2-ref">↑</a> Conformément aux critères du G29 ou tout avis futur du CEPD.</li>
-            <li id="fn3"><a href="#fn3-ref">↑</a> G29, Lignes directrices sur la transparence au sens du règlement (UE) 2016/679, adoptées le 11 avril 2018.</li>
-            <li id="fn4"><a href="#fn4-ref">↑</a> Un mot de passe seul n’est pas considéré comme un dispositif d’authentification équivalent à un certificat.</li>
-            <li id="fn5"><a href="#fn5-ref">↑</a> Y compris en mobilisant les sels, clés de hachage ou les tables de correspondance.</li>
+          <h2 id="notes-titre"><a href="#notes-titre" class="not-prose text-primary-600 no-underline hover:underline">Notes</a></h2>
+          <ol class="list-none pl-0">
+            <li id="fn1"><a href="#fn1-ref">1.</a> Le PMSI local correspond au PMSI de l’établissement, sauf dans le cas d’un GHT dans lequel l’établissement chef de file pourrait disposer du PMSI du GHT.</li>
+            <li id="fn2"><a href="#fn2-ref">2.</a> Conformément aux critères du G29 ou tout avis futur du CEPD.</li>
+            <li id="fn3"><a href="#fn3-ref">3.</a> G29, Lignes directrices sur la transparence au sens du règlement (UE) 2016/679, adoptées le 11 avril 2018.</li>
+            <li id="fn4"><a href="#fn4-ref">4.</a> Un mot de passe seul n’est pas considéré comme un dispositif d’authentification équivalent à un certificat.</li>
+            <li id="fn5"><a href="#fn5-ref">5.</a> Y compris en mobilisant les sels, clés de hachage ou les tables de correspondance.</li>
           </ol>
         </section>
+
       </article>
+
+      <nav class="outline" aria-label="Sommaire">
+        <div class="outline-hit" tabindex="0">
+          <div class="outline-mini" id="outline-mini"></div>
+          <div class="outline-panel" id="outline-panel"></div>
+        </div>
+      </nav>
     </div>
   </div>
 </MinimalLayout>
+
+<style is:global>
+  /* Resserre l'écart entre un paragraphe et la liste qui le suit pour l'aligner
+     sur l'écart entre deux puces (12px) : les marges verticales adjacentes
+     fusionnent en prenant la plus grande des deux, donc les deux côtés doivent
+     être réduits ensemble. */
+  article.prose p:has(+ ul, + ol) {
+    margin-bottom: 0.75rem;
+  }
+  article.prose p + ul,
+  article.prose p + ol {
+    margin-top: 0.75rem;
+  }
+
+  /* Sommaire flottant, façon Notion : traits discrets au repos, qui se
+     déplient en panneau au survol. Construit dynamiquement depuis les
+     titres h2/h3/h4 réels de l'article (voir le script plus bas). */
+  .outline {
+    position: fixed;
+    top: 50%;
+    right: clamp(0.75rem, 4vw, 2.5rem);
+    transform: translateY(-50%);
+    z-index: 20;
+  }
+
+  .outline-hit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 7px;
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none !important;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .outline-hit:focus,
+  .outline-hit:focus-visible {
+    border: none;
+    outline: none !important;
+    box-shadow: none;
+  }
+
+  .outline-mini {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 7px;
+    transition: opacity 0.15s ease;
+  }
+
+  .outline-hit:hover .outline-mini,
+  .outline-hit:focus-within .outline-mini {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .outline-dash {
+    height: 2px;
+    border-radius: 1px;
+    background: #e5e7eb;
+    transition: background 0.15s ease, width 0.15s ease;
+  }
+
+  .outline-dash[data-level="2"] {
+    width: 22px;
+  }
+
+  .outline-dash[data-level="3"] {
+    width: 13px;
+  }
+
+  .outline-dash.is-active {
+    background: #1068b9;
+  }
+
+  .outline-panel {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%) translateX(4px);
+    min-width: 15rem;
+    max-width: 19rem;
+    max-height: min(calc(100vh - 6rem), 42rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    background: #f7f9fc;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px -8px rgba(16, 24, 40, 0.14), 0 2px 8px -2px rgba(16, 24, 40, 0.14);
+    padding: 0.4rem;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .outline-panel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .outline-hit:hover .outline-panel,
+  .outline-hit:focus-within .outline-panel {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(-50%) translateX(0);
+  }
+
+  .outline-item {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    font: inherit;
+    font-family: inherit;
+    font-size: 0.875rem;
+    line-height: 1.35;
+    color: #6b7280;
+    padding: 0.4rem 0.6rem;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .outline-item[data-level="3"] {
+    padding-left: 1.35rem;
+    font-size: 0.8125rem;
+  }
+
+  .outline-item:hover {
+    background: #e2eefc;
+    color: #111827;
+  }
+
+  .outline-item.is-active {
+    background: #e2eefc;
+    color: #0f5495;
+    font-weight: 700;
+  }
+
+  @media (max-width: 860px) {
+    .outline {
+      display: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .outline-dash,
+    .outline-mini,
+    .outline-panel {
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    var headings = (
+      Array.prototype.slice.call(
+        document.querySelectorAll("article.prose h2, article.prose h3, article.prose h4")
+      ) as HTMLElement[]
+    ).filter(function (h) {
+      return h.getAttribute("data-toc") !== "skip";
+    });
+
+    var hitEl = document.querySelector(".outline-hit");
+    var miniEl = document.getElementById("outline-mini");
+    var panelEl = document.getElementById("outline-panel");
+    if (!hitEl || !miniEl || !panelEl || !headings.length) return;
+
+    var hit = hitEl;
+    var mini = miniEl;
+    var panel = panelEl;
+
+    var dashes: HTMLDivElement[] = [];
+    var items: HTMLAnchorElement[] = [];
+
+    headings.forEach(function (h) {
+      var level = h.tagName === "H2" ? "2" : "3";
+
+      var dash = document.createElement("div");
+      dash.className = "outline-dash";
+      dash.dataset.level = level;
+      dash.dataset.target = h.id;
+      mini.appendChild(dash);
+      dashes.push(dash);
+
+      var item = document.createElement("a");
+      item.className = "outline-item";
+      item.dataset.level = level;
+      item.dataset.target = h.id;
+      item.href = "#" + h.id;
+      var label = h.getAttribute("data-toc-label") || h.textContent || "";
+      item.textContent = label;
+      item.title = label;
+      panel.appendChild(item);
+      items.push(item);
+    });
+
+    function setActive(id: string) {
+      dashes.forEach(function (d) {
+        d.classList.toggle("is-active", d.dataset.target === id);
+      });
+      items.forEach(function (i) {
+        i.classList.toggle("is-active", i.dataset.target === id);
+      });
+    }
+
+    // Scroll-spy: re-checks every heading's live position on each scroll
+    // frame and keeps the last one that has passed the threshold line.
+    // (An IntersectionObserver only reports entries whose status *changed*
+    // since the last callback, so a big jump — like scrollIntoView from a
+    // click — can leave a lower heading "active" if it happened to be the
+    // one reported in that batch. Recomputing from live positions avoids
+    // that entirely, regardless of how the scroll happened.)
+    var THRESHOLD = 96;
+    var ticking = false;
+
+    function updateActive() {
+      ticking = false;
+      var current = headings[0].id;
+      for (var i = 0; i < headings.length; i++) {
+        if (headings[i].getBoundingClientRect().top - THRESHOLD <= 0) {
+          current = headings[i].id;
+        } else {
+          break;
+        }
+      }
+      setActive(current);
+    }
+
+    function onScroll() {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(updateActive);
+      }
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    updateActive();
+
+    function scrollToTarget(id: string | undefined) {
+      if (!id) return;
+      var target = document.getElementById(id);
+      if (!target) return;
+      target.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "auto"
+          : "smooth",
+        block: "start",
+      });
+    }
+
+    ([dashes, items] as HTMLElement[][]).forEach(function (group) {
+      group.forEach(function (el) {
+        el.addEventListener("click", function (e) {
+          e.preventDefault();
+          scrollToTarget(el.dataset.target);
+        });
+      });
+    });
+
+    // Soft edge fade instead of a scrollbar: mask the panel's own box so the
+    // fade always sits at the visible top/bottom edge, regardless of how far
+    // it's scrolled (a mask applies to the rendered viewport, not the
+    // scrolled content, unlike an absolutely-positioned overlay would).
+    var FADE = 22; // px
+    function updatePanelMask() {
+      var atTop = panel.scrollTop <= 1;
+      var atBottom =
+        panel.scrollTop + panel.clientHeight >= panel.scrollHeight - 1;
+      var stops = [
+        atTop ? "black 0" : "transparent 0",
+        atTop ? "black 0" : "black " + FADE + "px",
+        atBottom ? "black 100%" : "black calc(100% - " + FADE + "px)",
+        atBottom ? "black 100%" : "transparent 100%",
+      ];
+      var gradient = "linear-gradient(to bottom, " + stops.join(", ") + ")";
+      panel.style.setProperty("mask-image", gradient);
+      panel.style.setProperty("-webkit-mask-image", gradient);
+    }
+
+    panel.addEventListener("scroll", updatePanelMask, { passive: true });
+
+    // On open, bring the active item roughly to the middle of the panel so
+    // you land near "where you are" rather than always at the top of a long list.
+    function revealActiveInPanel() {
+      var active = panel.querySelector(".outline-item.is-active") as HTMLElement | null;
+      if (active) {
+        panel.scrollTop =
+          active.offsetTop - panel.clientHeight / 2 + active.offsetHeight / 2;
+      }
+      updatePanelMask();
+    }
+
+    hit.addEventListener("mouseenter", revealActiveInPanel);
+    hit.addEventListener("focusin", revealActiveInPanel);
+  })();
+</script>
