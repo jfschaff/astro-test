@@ -362,8 +362,8 @@ import MinimalLayout from "../layouts/MinimalLayout.astro";
 
       </article>
 
-      <nav class="outline" aria-label="Sommaire">
-        <div class="outline-hit" tabindex="0">
+      <nav class="floating-toc" aria-label="Sommaire">
+        <div class="outline-hit" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false" aria-label="Afficher le sommaire">
           <div class="outline-mini" id="outline-mini"></div>
           <div class="outline-panel" id="outline-panel"></div>
         </div>
@@ -388,7 +388,7 @@ import MinimalLayout from "../layouts/MinimalLayout.astro";
   /* Sommaire flottant, façon Notion : traits discrets au repos, qui se
      déplient en panneau au survol. Construit dynamiquement depuis les
      titres h2/h3/h4 réels de l'article (voir le script plus bas). */
-  .outline {
+  .floating-toc {
     position: fixed;
     top: 50%;
     right: clamp(0.75rem, 4vw, 2.5rem);
@@ -403,17 +403,6 @@ import MinimalLayout from "../layouts/MinimalLayout.astro";
     gap: 7px;
     padding: 1rem 0.5rem;
     cursor: pointer;
-    border: none;
-    outline: none !important;
-    box-shadow: none;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  .outline-hit:focus,
-  .outline-hit:focus-visible {
-    border: none;
-    outline: none !important;
-    box-shadow: none;
   }
 
   .outline-mini {
@@ -521,7 +510,7 @@ import MinimalLayout from "../layouts/MinimalLayout.astro";
   }
 
   @media (max-width: 860px) {
-    .outline {
+    .floating-toc {
       display: none;
     }
   }
@@ -676,7 +665,19 @@ import MinimalLayout from "../layouts/MinimalLayout.astro";
       updatePanelMask();
     }
 
-    hit.addEventListener("mouseenter", revealActiveInPanel);
-    hit.addEventListener("focusin", revealActiveInPanel);
+    hit.addEventListener("mouseenter", function () {
+      hit.setAttribute("aria-expanded", "true");
+      revealActiveInPanel();
+    });
+    hit.addEventListener("focusin", function () {
+      hit.setAttribute("aria-expanded", "true");
+      revealActiveInPanel();
+    });
+    hit.addEventListener("mouseleave", function () {
+      hit.setAttribute("aria-expanded", "false");
+    });
+    hit.addEventListener("focusout", function () {
+      hit.setAttribute("aria-expanded", "false");
+    });
   })();
 </script>
