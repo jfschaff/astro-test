@@ -1,7 +1,6 @@
 ---
 layout: ../../../layouts/ArticleLayout.astro
 title: "Guide EDS La Réunion"
-eyebrow: "Référentiel EDS de la CNIL"
 description: ""
 ---
 
