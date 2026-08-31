@@ -18,7 +18,7 @@ Notons que l'EDS La Réunion n'est pas strictement conforme à tous les points d
 
 Pour en savoir plus sur les dérogations voir notamment TODO : ajouter un lien.
 
-*Liens avec le référentiel EDS :* [1.3](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#1.3)
+*Liens avec le référentiel EDS :* [1.3](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#1.3), [2.3](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#2.3)
 
 L'EDS repose par ailleurs sur une base légale précise : la mission d'intérêt public du CHU de La Réunion. Le règlement européen sur la protection des données (RGPD) autorise un organisme public à traiter des données personnelles lorsque c'est nécessaire à l'exercice d'une mission d'intérêt général qui lui est confiée, ici, notamment, l'amélioration des soins et le développement de la recherche en santé. C'est cette base légale qui permet au CHU de La Réunion de constituer l'EDS, sans avoir à recueillir le consentement individuel de chaque patient pour chaque réutilisation de ses données.
 
@@ -26,13 +26,13 @@ L'EDS repose par ailleurs sur une base légale précise : la mission d'intérêt
 
 ### 1.2 Finalités et usages autorisés de l'EDS La Réunion
 
-L'EDS La Réunion existe pour permettre la réutilisation des données qu'il contient, en dehors du soin qui leur a donné naissance. C'est sa finalité même : rassembler des données de santé pour qu'elles servent ensuite à d'autres usages que celui pour lequel elles ont été initialement recueillies.
+L'EDS La Réunion existe pour permettre la réutilisation des données qu'il contient. C'est sa finalité même : rassembler des données de santé pour qu'elles servent ensuite à d'autres usages que celui pour lequel elles ont été initialement recueillies (prise en charge).
 
 *Liens avec le référentiel EDS :* [3.1.1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#3.1.1)
 
-Cette réutilisation n'est pas libre : elle est limitée à une liste précise d'usages autorisés. Ces usages relèvent de deux grandes catégories : ceux réservés à l'usage exclusif du CHU de La Réunion (pilotage de l'activité, amélioration de la prise en charge, qualité des soins, etc.), et ceux ouverts à des projets de recherche menés par des équipes internes ou partenaires. La liste complète figure en annexe : *Finalités de l'EDS La Réunion*.
+Cette réutilisation n'est pas libre : elle est limitée à une liste précise d'usages autorisés : les finalités. Ces usages relèvent de deux grandes catégories : ceux réservés à l'usage exclusif du CHU de La Réunion (pilotage de l'activité, amélioration de la prise en charge, qualité des soins, etc.), et ceux ouverts à des projets de recherche menés par des équipes internes ou partenaires. La liste exhaustive des finalités autorisées est reproduite en *Annexe A — Finalités de l'EDS La Réunion*.
 
-*Liens avec le référentiel EDS :* [3.1.2](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#3.1.2)
+*Liens avec le référentiel EDS :* [3.1.2](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#3.1.2), [3.1.3](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#3.1.3)
 
 #### Exemples d'usages interdits
 

@@ -39,6 +39,7 @@ Comprendre ce qu'est l'EDS La Réunion, ce qu'il permet, ce qu'il interdit, et c
 |---|---|
 | 3.1.1 | Finalité : permettre la réutilisation des données |
 | 3.1.2 | Les usages autorisés — renvoie vers l'annexe *Finalités de l'EDS La Réunion*, qui reproduit intégralement `finalités.md`, sans reformulation |
+| 3.1.3 | La recherche (F7 de l'annexe) traitée comme un usage à part, au même renvoi que le 3.1.2 |
 
 #### Exemples d'usages interdits
 
@@ -208,20 +209,20 @@ Ces points sont abordés dans plusieurs parties. Chaque occurrence est rédigée
 
 Reprend les éléments de plan non tranchés. Les sujets techniques et éditoriaux figurent dans `CLAUDE.md`.
 
-- **Libellé du 3.1.2 — probablement résolu.** La section 1.2 ne détaille plus les finalités dans le corps du texte : elle renvoie à l'annexe *Finalités de l'EDS La Réunion*, qui reproduit `finalités.md` (F1 à F9) sans reformulation. Celui-ci traite déjà la recherche (F7) comme un usage à part, correspondant au 3.1.3 du référentiel. Cela semble lever la question « quatre finalités ou cinq usages », en la déplaçant dans l'annexe plutôt que dans le corps de 1.2 — à confirmer avec le mainteneur avant de considérer ce point comme tranché.
+- ~~**Libellé du 3.1.2.**~~ **Résolu, par édition directe du guide.** La section 1.2 renvoie à l'annexe *Finalités de l'EDS La Réunion* (reproduction de `finalités.md`, F1 à F9) sans détailler les finalités dans le corps du texte, et son renvoi au référentiel cite désormais le 3.1.2 et le 3.1.3 côte à côte — la recherche (F7) y est donc bien traitée comme un usage à part, sans qu'il ait fallu choisir entre « quatre finalités » et « cinq usages ». Le plan (1.2 et Annexe A) reflète cette résolution.
 - **Statut de F5 dans `finalités.md`.** F5 (« concourir à la qualité, à la sécurité des soins et à la gestion des risques ») ne correspond à aucun des quatre items du 3.1.2 du référentiel, ni à une dérogation listée dans `derogations.md`. Fondement à clarifier avant de finaliser l'annexe A.
 - **Doublons 5.7 et 8.4.** Chacun de ces numéros porte deux exigences distinctes. Un paragraphe couvrant les deux, ou deux paragraphes avec le même renvoi ?
 - **Sous-partie 3.4 « Ré-identification ».** Section autonome du guide d'administration, ou répartition des exigences SEC-REI dans les sections existantes (3.2 pour les habilitations, 3.5 pour les droits) ?
 - **Point 7.2.** Rattaché à 3.1 (cycle de vie des données) comme actuellement, ou à une section « conservation » distincte ?
-- **Annexes.** Une annexe par partie, ou une annexe unique en fin de guide ? Le tableau ci-dessus suppose la seconde option, sans que ce soit arrêté.
+- **Annexes.** Une annexe par partie, ou une annexe unique en fin de guide ? Le tableau ci-dessus suppose la seconde option, sans que ce soit arrêté. L'Annexe A, telle qu'écrite dans le guide, utilise un titre `## Annexe A — <titre>` à plat (pas de section `## Annexes` englobante) : à confirmer comme convention pour les annexes suivantes.
 
 ---
 
 ## Décomptes
 
-- Partie 1 : 21 points (+1 : ajout du 3.2.2, Comité Stratégique)
+- Partie 1 : 22 points (+1 : ajout du 3.2.2, Comité Stratégique ; +1 : ajout du 3.1.3, recherche)
 - Partie 2 : 5 points
 - Partie 3 : 27 points
-- Total, occurrences uniques : 45 points
+- Total, occurrences uniques : 46 points
 
 Ces chiffres correspondent à l'état de la checklist au moment de l'établissement du plan. La checklist n'étant pas connectée au dépôt, ils ne se mettent pas à jour seuls et doivent être revérifiés à la main si le plan évolue.
