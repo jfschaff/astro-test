@@ -7,7 +7,7 @@ export interface Props {
   eyebrow?: string;
 }
 
-const { title, description, eyebrow } = Astro.props;
+const { title, description, eyebrow } = Astro.props.frontmatter ?? Astro.props;
 ---
 
 <MinimalLayout title={title} description={description}>
