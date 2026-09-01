@@ -51,12 +51,14 @@ Il faut donc éviter tout implicite qui supposerait que le lecteur travaille au 
 | L'entrepôt | **EDS La Réunion** |
 | L'entrepôt, en reprise proche | **l'EDS** |
 | Le responsable de traitement | **le CHU de La Réunion** |
+| La seconde instance de gouvernance (3.2.3) | **le Comité Scientifique, Ethique et Recherche**, ou **CSER** |
 
 Règles :
 
 - On écrit **EDS La Réunion** par défaut. Si le nom complet devient lourd — plusieurs occurrences dans une même phrase ou dans deux phrases voisines — on écrit simplement **l'EDS**.
 - On écrit **le CHU de La Réunion** pour le responsable de traitement. Éviter « l'établissement », « le RT », « le responsable de traitement » comme désignation courante dans le corps du texte. Le terme juridique « responsable de traitement » reste employable quand on cite ou explique le référentiel.
 - **« La Réunion » s'écrit toujours avec deux majuscules**, y compris en milieu de phrase. Jamais « la Réunion », jamais « la réunion ».
+- **« Comité Scientifique, Ethique et Recherche »** s'écrit toujours ainsi, **sans accent sur le E majuscule d'Ethique**. En reprise proche, on écrit simplement **CSER**.
 
 ---
 

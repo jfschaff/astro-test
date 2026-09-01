@@ -64,8 +64,23 @@ Les modalités d'exercice des droits sont détaillées sur le [site internet de 
 
 *Liens avec le référentiel EDS :* [9.2](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#9.2)
 
+### 1.4 Gouvernance des données
 
+La réutilisation des données de l'EDS La Réunion n'est pas laissée à l'appréciation des personnes impliquées : elle est encadrée par une gouvernance dédiée, juste et équitable.
 
+*Liens avec le référentiel EDS :* [3.2.1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#3.2.1)
+
+Cette gouvernance repose sur deux instances. La première, le Comité Stratégique EDS, détermine les orientations stratégiques et scientifiques de l'EDS La Réunion. Elle joue notamment un rôle clé dans le choix des données qui sont intégrées à l'EDS.
+
+*Liens avec le référentiel EDS :* [3.2.2](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#3.2.2)
+
+La seconde, le Comité Scientifique, Ethique et Recherche (CSER), valide les accès aux données de l'EDS. Elle s'assure notamment du respect de la réglementation ainsi que de la légitimité des études menées et des données nécessaires.
+
+*Liens avec le référentiel EDS :* [3.2.3](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#3.2.3)
+
+Enfin, toute demande adressée à la gouvernance doit justifier, catégorie de données par catégorie de données, les données dont le projet a réellement besoin, dans le respect du principe de minimisation inscrit dans le RGPD.
+
+*Liens avec le référentiel EDS :* [5.4](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#5.4)
 
 ## Annexe A — Finalités de l'EDS La Réunion
 
