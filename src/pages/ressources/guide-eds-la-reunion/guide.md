@@ -40,6 +40,33 @@ Cette réutilisation n'est pas libre : elle est limitée à une liste précise d
 
 *Liens avec le référentiel EDS :* [3.1.4](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#3.1.4)
 
+### 1.3 Droits et informations des personnes
+
+Le RGPD repose sur deux exigences essentielles envers les personnes dont les données sont traitées : elles doivent être informées de ce traitement, et elles disposent de droits qu'elles peuvent exercer sur leurs données. L'EDS La Réunion décline ces deux exigences en mesures concrètes, aussi bien pour les patients que pour les professionnels de santé dont les données figurent dans l'entrepôt.
+
+Les patients sont informés, lors de leur prise en charge et via des campagnes de communication, que les données recueillies sont susceptibles d'être versées dans l'EDS La Réunion.
+
+**Il est particulièrement important pour tous de savoir que les patients sont susceptibles de recevoir, après leur passage au CHU, un message les informant de la réutilisation de leurs données. Ce message peut être transmis par email, SMS ou via la messagerie sécurisée intégrée à Mon Espace Santé (MSS Citoyenne).**
+
+*Liens avec le référentiel EDS :* [8.1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#8.1), [8.2.2.1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#8.2.2.1), [9.1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#9.1) 
+
+Cette information initiale est complétée par un dispositif de transparence continue : un « portail de transparence », accessible sur le [site internet de l'EDS La Réunion](https://eds.chu-reunion.fr), publie chaque réutilisation des données à des fins de recherche, d'étude ou d'évaluation.
+
+*Liens avec le référentiel EDS :* [8.4](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#8.4)
+
+Les professionnels de santé dont les données sont elles aussi versées dans l'entrepôt, dans le cadre de leur activité, sont informés individuellement de ce traitement.
+
+*Liens avec le référentiel EDS :* [8.5.1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#8.5.1)
+
+Au-delà de cette information, les personnes concernées — patients comme professionnels — disposent des droits prévus par le RGPD sur les données qui les concernent : droit d'accès, droit de rectification, droit à l'effacement, droit à la limitation du traitement, et droit d'opposition.
+
+Les modalités d'exercice des droits sont détaillées sur le [site internet de l'EDS La Réunion](https://eds.chu-reunion.fr).
+
+*Liens avec le référentiel EDS :* [9.2](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#9.2)
+
+
+
+
 ## Annexe A — Finalités de l'EDS La Réunion
 
 Ce document définit les finalités de l'EDS La Réunion.
