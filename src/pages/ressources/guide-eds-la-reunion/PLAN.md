@@ -110,20 +110,28 @@ Comprendre ce qu'est l'EDS La Réunion, ce qu'il permet, ce qu'il interdit, et c
 
 Ce qu'un porteur de projet peut faire avec les données, ce qu'il doit demander, et à quelles conditions. Couvre aussi bien les équipes internes au CHU de La Réunion que les équipes externes.
 
-### 2.1 Qui peut accéder aux données
+### 2.1 Les deux interfaces principales de l'EDS La Réunion
+
+Présentation technique d'« Arkhn Explore » (données agrégées, pré-screening) et des *Data Clean Rooms* (espaces de travail cloisonnés). Pas de point de référentiel associé — contenu descriptif, pas une exigence de conformité.
+
+### 2.2 Règles d'utilisation des DCR
+
+Regroupe les anciens 2.1/2.2/2.3 (qui accède, où l'on travaille, ce qu'on en sort), désormais présentés comme sous-parties de la vie d'un projet dans une DCR plutôt que comme sections indépendantes.
+
+#### 2.2.1 Qui peut accéder à une DCR
 
 | Point | Objet |
 |---|---|
 | 6.3 | Équipes de recherche habilitées, données strictement nécessaires au projet |
 | 6.4 | Personnel interne habilité, hors recherche |
 
-### 2.2 Où l'on travaille
+#### 2.2.2 Cloisonnement des espaces de travail
 
 | Point | Objet |
 |---|---|
 | SEC-ESP-1 | Espaces de travail projet, étanches entre eux et vis-à-vis de l'EDS |
 
-### 2.3 Faire sortir des résultats
+#### 2.2.3 Faire sortir des résultats
 
 | Point | Objet |
 |---|---|

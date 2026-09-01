@@ -16,7 +16,7 @@ Parce qu'il traite des données de santé à grande échelle, l'EDS ne peut pas 
 
 Notons que l'EDS La Réunion n'est pas strictement conforme à tous les points du référentiel. Il a été autorisé par la CNIL suite à une demande d'autorisation listant notamment les non-conformités en les justifiant.
 
-Pour en savoir plus sur les dérogations voir notamment TODO : ajouter un lien.
+Pour en savoir plus sur les dérogations voir notamment @TODO : ajouter un lien.
 
 *Liens avec le référentiel EDS :* [1.3](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#1.3), [2.3](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#2.3)
 
@@ -135,7 +135,11 @@ Cette partie du guide s'adresse aux utilisateurs de l'EDS La Réunion, c'est-à-
 
 En tant qu'utilisateur de l'EDS, vous vous engagez à respecter les règles de fonctionnement de l'EDS.
 
-### 2.1 Deux interfaces principales pour les utilisateurs
+
+@TODO : clarifier les types d'utilisateurs. Ex. médecin DIM ? Voir si on les met dans Partie 2 ou Partie 3 ou autre.
+
+
+### 2.1 Les deux interfaces principales de l'EDS La Réunion
 
 L'EDS La Réunion comporte deux interfaces principales : « Arkhn Explore » et les « _Data Clean Rooms_ » (ou « bulles sécurisées »).
 
@@ -143,7 +147,7 @@ L'EDS La Réunion comporte deux interfaces principales : « Arkhn Explore » e
 
 Explore permet d'afficher des données statistiques et agrégées de l'EDS (par exemple un nombre ou une distribution de patients satisfaisant à des critères donnés). À ce titre, cette interface est la moins sensible car elle n'expose aucune donnée permettant d'identifier les patients. Elle est donc utilisable assez largement par les agents du CHU de La Réunion.
 
-Cette interface est donc aussi limitée : elle permet essentiellement de réaliser un premier dénombrement des patients potentiellement intéressants pour une étude donnée (pré-screening).
+Cette interface est aussi limitée : elle permet essentiellement de réaliser un premier dénombrement des patients potentiellement intéressants pour une étude donnée (pré-screening).
 
 #### Les _Data Clean Rooms_ (DCR)
 
@@ -153,9 +157,7 @@ En pratique, il s'agit d'un système Linux Debian accessible via un navigateur w
 
 Les DCR contiennent potentiellement des données sensibles, et font donc l'objet de mesures de sécurité spécifiques. L'import et l'export de données y sont contrôlés par les administrateurs de l'EDS.
 
-
-
-
+### 2.2 Règles d'utilisation des DCR
 
 
 
