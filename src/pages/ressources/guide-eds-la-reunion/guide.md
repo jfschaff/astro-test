@@ -82,6 +82,52 @@ Enfin, toute demande adressée à la gouvernance doit justifier, catégorie de d
 
 *Liens avec le référentiel EDS :* [5.4](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#5.4)
 
+### 1.5 Sécurisation des données identifiantes, pseudonymisation et ré-identification des patients
+
+Toutes les données de l'EDS La Réunion ne sont pas traitées de la même façon.
+
+#### Chiffrement des données identifiantes
+
+Celles qui permettent d'identifier directement un patient — nom, prénoms, date de naissance exacte, etc. — bénéficient d'une protection renforcée : elles font l'objet d'un chiffrement cryptographique supplémentaire par rapport aux autres données de l'entrepôt.
+
+*Liens avec le référentiel EDS :* [5.2.1.1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#5.2.1.1), [5.8](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#5.8), [SEC-LOG-4](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-LOG-4), [SEC-LOG-5](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-LOG-5), [SEC-LOG-6](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-LOG-6)
+
+#### Pseudonymisation
+
+Pour pouvoir malgré tout relier entre elles les données d'un même patient sans exposer son identité aux utilisateurs de l'EDS, l'EDS attribue à chaque patient un identifiant unique, le pseudonyme. Ce pseudonyme remplace les données identifiantes partout ailleurs dans l'entrepôt.
+
+Différents pseudonymes sont utilisés pour sécuriser l'identité des patients : les pseudonymes vus par les chercheurs ne sont pas les mêmes que ceux du cœur de l'entrepôt.
+
+*Liens avec le référentiel EDS :* [SEC-PSE](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-PSE), [SEC-ESP-2](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-ESP-2)
+
+#### Ré-identification
+
+L'EDS est conçu de manière qu'il ne soit pas possible à ses utilisateurs, hors de certains usages autorisés, de ré-identifier les patients, c'est-à-dire de retrouver leur identité.
+
+L'accès aux données identifiantes est donc très restreint : il n'est ouvert qu'aux personnes qui en ont besoin pour l'une des raisons autorisées ainsi que, par dérogation propre à l'EDS La Réunion, à l'équipe de soin d'un patient pour les besoins de sa prise en charge.
+
+*Liens avec le référentiel EDS :* [6.2](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#6.2)
+
+Ces raisons de recontacter un patient sont détaillées au point [5.5 du référentiel de la CNIL](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#5.5).
+
+#### Ré-identification au bénéfice d'un patient
+
+**Notez qu'une procédure spécifique de ré-identification existe en cas d'urgence médicale ou si cette ré-identification bénéficie au patient, par exemple pour lui proposer des mesures de prévention ou de soin.**
+
+**Si vous êtes utilisateur de l'EDS et que vous identifiez une telle situation, pensez donc à vous poser la question de la pertinence de déclencher cette procédure.**
+
+*Liens avec le référentiel EDS :* [5.5](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#5.5), [SEC-REI-3](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-REI-3)
+
+### 1.6 Export de données hors de l'EDS
+
+Sauf exception, aucune donnée ne peut sortir de l'EDS La Réunion sans avoir été anonymisée au préalable, c'est-à-dire rendue impossible à relier, même indirectement, à un patient identifié.
+
+**En pratique, les données qui peuvent être exportées hors de l'EDS sont surtout des données agrégées (statistiques, figures d'un article, etc.).**
+
+*Liens avec le référentiel EDS :* [SEC-EXP-1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-EXP-1)
+
+L'EDS La Réunion bénéficie toutefois d'une dérogation : des données pseudonymisées peuvent être exportées vers un autre système présentant un niveau de conformité et de sécurité équivalent, par exemple un autre entrepôt de données de santé autorisé.
+
 ## Annexe A — Finalités de l'EDS La Réunion
 
 Ce document définit les finalités de l'EDS La Réunion.

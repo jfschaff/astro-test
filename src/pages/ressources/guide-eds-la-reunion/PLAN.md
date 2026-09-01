@@ -67,17 +67,44 @@ Comprendre ce qu'est l'EDS La Réunion, ce qu'il permet, ce qu'il interdit, et c
 | 3.2.3 | Le CSER rend un avis préalable systématique sur chaque projet |
 | 5.4 | Toute demande justifie les catégories de données sollicitées |
 
-### 1.5 Les données et comment elles sont protégées
+### 1.5 Sécurisation des données identifiantes, pseudonymisation et ré-identification des patients
+
+#### Chiffrement des données identifiantes
 
 | Point | Objet |
 |---|---|
 | 5.2.1.1 | Les données identifiantes sont stockées à part |
-| SEC-PSE-1.2 | Le pseudonyme unique : ce que c'est, à quoi il sert |
-| 6.2 | Les données identifiantes ne sont accessibles que pour les finalités du 5.5 |
-| 5.5 | Les quatre seules raisons de recontacter un patient |
+| 5.8 | Elles sont, avec les tables de correspondance et les données génétiques ou de localisation, chiffrées séparément des données pseudonymisées |
+| SEC-LOG-4 | Séparation cryptographique des données identifiantes et des tables de correspondance |
+| SEC-LOG-5 | Accès aux deux catégories de données via des comptes ou profils distincts |
+| SEC-LOG-6 | Chiffrement dédié pour les données génétiques ou de localisation |
+
+#### Pseudonymisation
+
+| Point | Objet |
+|---|---|
+| `SEC-PSE` | Le pseudonyme unique : ce que c'est, à quoi il sert — renvoi vers la sous-partie du référentiel, pas un point précis |
+| SEC-ESP-2 | Un pseudonyme distinct est généré pour chaque espace de travail (chercheurs) par rapport au cœur de l'entrepôt |
+
+#### Ré-identification
+
+| Point | Objet |
+|---|---|
+| 6.2 | Les données identifiantes ne sont accessibles que pour les finalités du 5.5, et, par dérogation (`DER-6.2`), à l'équipe de soin des patients concernés |
+| 5.5 | Renvoi vers les quatre raisons de recontacter un patient (détail laissé au référentiel, pas reformulé dans le guide) |
+
+#### Ré-identification au bénéfice d'un patient
+
+| Point | Objet |
+|---|---|
+| 5.5 | Rappel : la ré-identification au bénéfice direct du patient fait partie des quatre raisons autorisées |
 | SEC-REI-3 | Une ré-identification reste possible en urgence médicale |
-| SEC-EXP-1 | Rien ne sort de l'EDS sans anonymisation |
-| 7.2 | Durée de conservation : 20 ans maximum |
+
+### 1.6 Export de données hors de l'EDS
+
+| Point | Objet |
+|---|---|
+| SEC-EXP-1 | Rien ne sort de l'EDS sans anonymisation, sauf dérogation (`DER-SEC-EXP-1`) : les données pseudonymisées peuvent être exportées vers des systèmes présentant un niveau de conformité et de sécurité équivalent (p. ex. d'autres EDS autorisés) |
 
 ---
 
@@ -198,7 +225,6 @@ Ces points sont abordés dans plusieurs parties. Chaque occurrence est rédigée
 |---|---|---|---|
 | 6.2 | pourquoi les données identifiantes sont à part | — | comment cloisonner et contrôler |
 | 6.4 | — | ce à quoi vous avez droit | comment habiliter |
-| 7.2 | combien de temps on garde | — | comment purger |
 | 9.2 | quels sont vos droits | — | comment les instruire |
 | 5.5 | les quatre raisons de vous recontacter | — | via la sous-partie ré-identification |
 | SEC-EXP-1 | rien ne sort sans anonymisation | ce que vous faites avant d'exporter | comment le processus est outillé |
@@ -215,16 +241,16 @@ Reprend les éléments de plan non tranchés. Les sujets techniques et éditoria
 - ~~**Doublon 8.4.**~~ **Résolu.** Un seul paragraphe de la section 1.3 couvre à la fois l'existence du portail de transparence et la publication de chaque réutilisation, avec un seul renvoi [8.4].
 - **Doublon 5.7.** Ce numéro porte deux exigences distinctes (réévaluation périodique de la pertinence, suppression des données devenues inutiles). Un paragraphe couvrant les deux, ou deux paragraphes avec le même renvoi ?
 - **Sous-partie 3.4 « Ré-identification ».** Section autonome du guide d'administration, ou répartition des exigences SEC-REI dans les sections existantes (3.2 pour les habilitations, 3.5 pour les droits) ?
-- **Point 7.2.** Rattaché à 3.1 (cycle de vie des données) comme actuellement, ou à une section « conservation » distincte ?
+- **Point 7.2.** Retiré de la partie 1 (1.5/1.6/1.7 restructurées ne le couvrent plus) ; il ne reste traité qu'en partie 3, où le rattachement n'est pas tranché : à 3.1 (cycle de vie des données) comme actuellement, ou à une section « conservation » distincte ?
 - **Annexes.** Une annexe par partie, ou une annexe unique en fin de guide ? Le tableau ci-dessus suppose la seconde option, sans que ce soit arrêté. L'Annexe A, telle qu'écrite dans le guide, utilise un titre `## Annexe A — <titre>` à plat (pas de section `## Annexes` englobante) : à confirmer comme convention pour les annexes suivantes.
 
 ---
 
 ## Décomptes
 
-- Partie 1 : 23 points (+1 : ajout du 3.2.2, Comité Stratégique ; +1 : ajout du 3.1.3, recherche ; -1 : fusion de 8.4 (a)/(b) en un seul point ; +2 : ajout du 8.2.2.1 et du 9.1, information individuelle et campagne publique préalable)
+- Partie 1 : 27 points (+1 : ajout du 3.2.2, Comité Stratégique ; +1 : ajout du 3.1.3, recherche ; -1 : fusion de 8.4 (a)/(b) en un seul point ; +2 : ajout du 8.2.2.1 et du 9.1, information individuelle et campagne publique préalable ; -1 : retrait du 7.2, restructuration de 1.5 en 1.5/1.6 ; +4 : détail de 1.5 en quatre sous-parties, ajout du 5.8, SEC-LOG-4, SEC-LOG-5, SEC-LOG-6 ; +1 : ajout du SEC-ESP-2, pseudonyme par espace de travail)
 - Partie 2 : 5 points
 - Partie 3 : 27 points
-- Total, occurrences uniques : 47 points
+- Total, occurrences uniques : 51 points
 
 Ces chiffres correspondent à l'état de la checklist au moment de l'établissement du plan. La checklist n'étant pas connectée au dépôt, ils ne se mettent pas à jour seuls et doivent être revérifiés à la main si le plan évolue.
