@@ -66,7 +66,7 @@ Les modalités d'exercice des droits sont détaillées sur le [site internet de 
 
 ### 1.4 Gouvernance des données
 
-La réutilisation des données de l'EDS La Réunion n'est pas laissée à l'appréciation des personnes impliquées : elle est encadrée par une gouvernance dédiée, juste et équitable.
+La réutilisation des données de l'EDS La Réunion n'est pas laissée à la seule appréciation des personnes impliquées : elle est encadrée par une gouvernance dédiée, juste et équitable.
 
 *Liens avec le référentiel EDS :* [3.2.1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#3.2.1)
 
@@ -74,7 +74,7 @@ Cette gouvernance repose sur deux instances. La première, le Comité Stratégiq
 
 *Liens avec le référentiel EDS :* [3.2.2](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#3.2.2)
 
-La seconde, le Comité Scientifique, Ethique et Recherche (CSER), valide les accès aux données de l'EDS. Elle s'assure notamment du respect de la réglementation ainsi que de la légitimité des études menées et des données nécessaires.
+**La seconde, le Comité Scientifique, Ethique et Recherche (CSER) du CHU de La Réunion, valide les accès aux données de l'EDS. Elle s'assure notamment du respect de la réglementation ainsi que de la légitimité des études menées et des données nécessaires.**
 
 *Liens avec le référentiel EDS :* [3.2.3](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#3.2.3)
 
