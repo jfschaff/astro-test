@@ -76,8 +76,6 @@ Comprendre ce qu'est l'EDS La Réunion, ce qu'il permet, ce qu'il interdit, et c
 | 5.2.1.1 | Les données identifiantes sont stockées à part |
 | 5.8 | Elles sont, avec les tables de correspondance et les données génétiques ou de localisation, chiffrées séparément des données pseudonymisées |
 | SEC-LOG-4 | Séparation cryptographique des données identifiantes et des tables de correspondance |
-| SEC-LOG-5 | Accès aux deux catégories de données via des comptes ou profils distincts |
-| SEC-LOG-6 | Chiffrement dédié pour les données génétiques ou de localisation |
 
 #### Pseudonymisation
 
@@ -248,9 +246,9 @@ Reprend les éléments de plan non tranchés. Les sujets techniques et éditoria
 
 ## Décomptes
 
-- Partie 1 : 27 points (+1 : ajout du 3.2.2, Comité Stratégique ; +1 : ajout du 3.1.3, recherche ; -1 : fusion de 8.4 (a)/(b) en un seul point ; +2 : ajout du 8.2.2.1 et du 9.1, information individuelle et campagne publique préalable ; -1 : retrait du 7.2, restructuration de 1.5 en 1.5/1.6 ; +4 : détail de 1.5 en quatre sous-parties, ajout du 5.8, SEC-LOG-4, SEC-LOG-5, SEC-LOG-6 ; +1 : ajout du SEC-ESP-2, pseudonyme par espace de travail)
+- Partie 1 : 25 points (+1 : ajout du 3.2.2, Comité Stratégique ; +1 : ajout du 3.1.3, recherche ; -1 : fusion de 8.4 (a)/(b) en un seul point ; +2 : ajout du 8.2.2.1 et du 9.1, information individuelle et campagne publique préalable ; -1 : retrait du 7.2, restructuration de 1.5 en 1.5/1.6 ; +4 : détail de 1.5 en quatre sous-parties, ajout du 5.8, SEC-LOG-4, SEC-LOG-5, SEC-LOG-6 ; +1 : ajout du SEC-ESP-2, pseudonyme par espace de travail ; -2 : retrait de SEC-LOG-5 et SEC-LOG-6, relatifs aux habilitations plutôt qu'au chiffrement)
 - Partie 2 : 5 points
 - Partie 3 : 27 points
-- Total, occurrences uniques : 51 points
+- Total, occurrences uniques : 49 points
 
 Ces chiffres correspondent à l'état de la checklist au moment de l'établissement du plan. La checklist n'étant pas connectée au dépôt, ils ne se mettent pas à jour seuls et doivent être revérifiés à la main si le plan évolue.

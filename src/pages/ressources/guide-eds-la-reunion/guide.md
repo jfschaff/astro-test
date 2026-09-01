@@ -90,7 +90,7 @@ Toutes les données de l'EDS La Réunion ne sont pas traitées de la même faço
 
 Celles qui permettent d'identifier directement un patient — nom, prénoms, date de naissance exacte, etc. — bénéficient d'une protection renforcée : elles font l'objet d'un chiffrement cryptographique supplémentaire par rapport aux autres données de l'entrepôt.
 
-*Liens avec le référentiel EDS :* [5.2.1.1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#5.2.1.1), [5.8](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#5.8), [SEC-LOG-4](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-LOG-4), [SEC-LOG-5](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-LOG-5), [SEC-LOG-6](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-LOG-6)
+*Liens avec le référentiel EDS :* [5.2.1.1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#5.2.1.1), [5.8](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#5.8), [SEC-LOG-4](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-LOG-4)
 
 #### Pseudonymisation
 
