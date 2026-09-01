@@ -128,6 +128,37 @@ Sauf exception, aucune donnée ne peut sortir de l'EDS La Réunion sans avoir é
 
 L'EDS La Réunion bénéficie toutefois d'une dérogation : des données pseudonymisées peuvent être exportées vers un autre système présentant un niveau de conformité et de sécurité équivalent, par exemple un autre entrepôt de données de santé autorisé.
 
+
+## Partie 2 — Guide utilisateur
+
+Cette partie du guide s'adresse aux utilisateurs de l'EDS La Réunion, c'est-à-dire aux personnes qui possèdent un compte.
+
+En tant qu'utilisateur de l'EDS, vous vous engagez à respecter les règles de fonctionnement de l'EDS.
+
+### 2.1 Deux interfaces principales pour les utilisateurs
+
+L'EDS La Réunion comporte deux interfaces principales : « Arkhn Explore » et les « _Data Clean Rooms_ » (ou « bulles sécurisées »).
+
+#### Arkhn Explore
+
+Explore permet d'afficher des données statistiques et agrégées de l'EDS (par exemple un nombre ou une distribution de patients satisfaisant à des critères donnés). À ce titre, cette interface est la moins sensible car elle n'expose aucune donnée permettant d'identifier les patients. Elle est donc utilisable assez largement par les agents du CHU de La Réunion.
+
+Cette interface est donc aussi limitée : elle permet essentiellement de réaliser un premier dénombrement des patients potentiellement intéressants pour une étude donnée (pré-screening).
+
+#### Les _Data Clean Rooms_ (DCR)
+
+Une data clean room est un espace cloisonné dédié à une étude particulière, dans lequel les données nécessaires à l'étude sont intégrées après validation par le CSER. Cet espace permet aux investigateurs de travailler sur les données sans que celles-ci ne quittent l'EDS.
+
+En pratique, il s'agit d'un système Linux Debian accessible via un navigateur web. Des applications d'analyse de données y sont déjà installées, comme par exemple LibreOffice Calc (copie Open Source d'Excel), Python 3, R ou Jamovi.
+
+Les DCR contiennent potentiellement des données sensibles, et font donc l'objet de mesures de sécurité spécifiques. L'import et l'export de données y sont contrôlés par les administrateurs de l'EDS.
+
+
+
+
+
+
+
 ## Annexe A — Finalités de l'EDS La Réunion
 
 Ce document définit les finalités de l'EDS La Réunion.
