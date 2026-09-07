@@ -141,7 +141,7 @@ En tant qu'utilisateur de l'EDS, vous vous engagez à respecter les règles de f
 
 ### 2.1 Les deux interfaces principales de l'EDS La Réunion
 
-L'EDS La Réunion comporte deux interfaces principales : « Arkhn Explore » et les « _Data Clean Rooms_ » (ou « bulles sécurisées »).
+L'EDS La Réunion comporte deux interfaces principales : « Arkhn Explore » et les « _Data Clean Rooms_ » (aussi appelées « bulles sécurisées »).
 
 #### Arkhn Explore
 
@@ -153,11 +153,69 @@ Cette interface est aussi limitée : elle permet essentiellement de réaliser un
 
 Une data clean room est un espace cloisonné dédié à une étude particulière, dans lequel les données nécessaires à l'étude sont intégrées après validation par le CSER. Cet espace permet aux investigateurs de travailler sur les données sans que celles-ci ne quittent l'EDS.
 
-En pratique, il s'agit d'un système Linux Debian accessible via un navigateur web. Des applications d'analyse de données y sont déjà installées, comme par exemple LibreOffice Calc (copie Open Source d'Excel), Python 3, R ou Jamovi.
+En pratique, il s'agit d'un système Linux Debian accessible via un navigateur web. Des applications d'analyse de données y sont déjà installées, comme par exemple LibreOffice Calc (copie Open Source d'Excel), Python, R ou Jamovi.
 
 Les DCR contiennent potentiellement des données sensibles, et font donc l'objet de mesures de sécurité spécifiques. L'import et l'export de données y sont contrôlés par les administrateurs de l'EDS.
 
-### 2.2 Règles d'utilisation des DCR
+### 2.2 Règles d'accès à l'EDS La Réunion
+
+En tant qu'utilisateur de l'EDS La Réunion, vous vous engagez à respecter les règles d'utilisation exposées ci-dessous.
+
+Tout agent du CHU de La Réunion peut demander un accès à l'EDS. Par défaut, cet accès permettra de visualiser les données agrégées (donc non identifiantes) présentées par le module Arkhn Explore (statistiques).
+
+Les personnes externes qui collaborent avec des investigateurs du CHU de La Réunion sur des projets qui ont été approuvés par le CSER sont aussi autorisés à accéder à l'EDS La Réunion.
+
+En tant qu'utilsitaure de l'EDS, il vous est strictement interdit de partager votre accès à un tiers. Tout contournement volontaire de cette mesure de sécurité pourra provoquer la révocation immédiate de votre accès à l'EDS.
+
+Si vous pensez que vos accès à l'EDS ont été compromis, vous vous engagez à en informer l'équipe opérationnelle dans les plus brefs délais à l'adresse eds@chu-reunion.fr ou par téléphone. Vos accès seront alors réinitialisés et une vérification sera faite pour s'assurer qu'aucun accès illégitime n'a eu lieu.
+
+*Liens avec le référentiel EDS :* [6.1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#6.1)
+
+### 2.3 Règles d'utilisation des DCR
+
+#### 2.3.1 Création d'une DCR
+
+La création d'une DCR se fait sur demande de l'investigateur principal, qui indique quels membres de l'équipe projet doit y avoir accès.
+
+L'investigateur principal doit être salarié du CHU de La Réunion. Il est garant du bon respect des règles d'accès par les membres de son équipe.
+
+Pour les internes, c'est le directeur de thèse, ou une personne du CHU qui le représente, qui fait la demande d'ouverture de la DCR.
+
+#### 2.3.2 Export de données dans une DCR
+
+Les données strictement nécessaires à l'étude, et dont l'accès à l'équipe a été validée par le CSER, sont mises à votre dispostion par l'équipe opérationnelle de l'EDS.
+
+*Liens avec le référentiel EDS :* [6.3](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#6.3)
+
+Pour récupérer les données, vous devez 
+
+
+#### 2.3.3 Qui peut accéder à une DCR
+
+Une fois une DCR créée, seule les personnes de l'équipe identifée 
+
+
+
+### 2.X Règles d'utilisation spécifiques pour le DIM ?
+
+
+
+
+
+
+- contacts clés
+- 
+
+
+
+
+## Partie 3 — Guide d'administration
+
+à prévoir :
+- procédure de révocation des acces à des personnes ne respectant pas les règles
+- procédure de réidentification
+- procédure de réidentification d'urgence
+- procédure de réinitialition d'un compte compromis
 
 
 
