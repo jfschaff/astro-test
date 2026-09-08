@@ -110,33 +110,62 @@ Comprendre ce qu'est l'EDS La Réunion, ce qu'il permet, ce qu'il interdit, et c
 
 Ce qu'un porteur de projet peut faire avec les données, ce qu'il doit demander, et à quelles conditions. Couvre aussi bien les équipes internes au CHU de La Réunion que les équipes externes.
 
-### 2.1 Les deux interfaces principales de l'EDS La Réunion
+### 2.1 L'équipe EDS
+
+Présentation nominative de l'équipe pluriprofessionnelle de l'EDS (DIM, responsable opérationnel, ingénieur, médecin de santé publique) et contacts clés. Pas de point de référentiel associé — contenu organisationnel.
+
+### 2.2 Les types d'utilisateurs de l'EDS La Réunion
+
+Trois profils (utilisateurs, utilisateurs avancés, administrateurs) et leur correspondance avec les profils Arkhn (Data user / Data manager / Data engineer).
+
+| Point | Objet |
+|---|---|
+| 6.4 | Personnel interne habilité (utilisateurs avancés), destinataire de données pseudonymisées |
+| SEC-HAB-1 | Profils d'habilitation différenciés |
+| SEC-HAB-4 | Accès privilégiés (administrateurs) réservés à une équipe restreinte |
+
+### 2.3 Les deux interfaces principales de l'EDS La Réunion
 
 Présentation technique d'« Arkhn Explore » (données agrégées, pré-screening) et des *Data Clean Rooms* (espaces de travail cloisonnés). Pas de point de référentiel associé — contenu descriptif, pas une exigence de conformité.
 
-### 2.2 Règles d'utilisation des DCR
-
-Regroupe les anciens 2.1/2.2/2.3 (qui accède, où l'on travaille, ce qu'on en sort), désormais présentés comme sous-parties de la vie d'un projet dans une DCR plutôt que comme sections indépendantes.
-
-#### 2.2.1 Qui peut accéder à une DCR
+### 2.4 Règles d'accès à l'EDS La Réunion
 
 | Point | Objet |
 |---|---|
-| 6.3 | Équipes de recherche habilitées, données strictement nécessaires au projet |
-| 6.4 | Personnel interne habilité, hors recherche |
+| 6.1 | Attention particulière à la gestion des droits d'accès |
+| SEC-HAB-2 | Granularité des accès : accès par défaut limité aux données agrégées (Arkhn Explore) |
+| 6.3 | Équipes de recherche externes habilitées, sur projets approuvés par la gouvernance |
 
-#### 2.2.2 Cloisonnement des espaces de travail
+Les règles « ne pas partager son accès » et « signaler un accès compromis » n'ont pas de point de référentiel précis associé — engagements de bon usage, pas une exigence formulée telle quelle dans le référentiel.
+
+### 2.5 Règles d'utilisation des DCR
+
+Regroupe ce qui était les anciens 2.1/2.2/2.3 (qui accède, où l'on travaille, ce qu'on en sort), présenté comme le cycle de vie d'un projet dans une DCR.
+
+#### 2.5.1 Création d'une DCR
 
 | Point | Objet |
 |---|---|
-| SEC-ESP-1 | Espaces de travail projet, étanches entre eux et vis-à-vis de l'EDS |
+| SEC-ESP-1 | Espace de travail spécifique à chaque projet de recherche |
 
-#### 2.2.3 Faire sortir des résultats
+#### 2.5.2 Accès à une DCR
 
 | Point | Objet |
 |---|---|
-| SEC-EXP-1 | Seuls des jeux anonymes peuvent sortir |
-| SEC-EXP-2 | Tout export est validé au préalable par un responsable |
+| SEC-HAB-3 | Habilitation individuelle validée par une instance de gouvernance |
+| SEC-HAB-6 | Retrait immédiat des permissions dès le départ d'un membre de l'équipe |
+
+#### 2.5.3 Export et import de données dans une DCR
+
+| Point | Objet |
+|---|---|
+| 6.3 | Données pseudonymisées mises à disposition des équipes habilitées |
+| SEC-EXP-1 | Seuls des jeux de données anonymes peuvent être exportés |
+| SEC-EXP-2 | Validation préalable d'un responsable pour tout export |
+
+### 2.6 Accès pour les utilisateurs avancés
+
+Contenu non rédigé (`@TODO` dans le guide). Points pressentis : 6.4, SEC-HAB-2.
 
 ---
 
@@ -235,6 +264,11 @@ Ces points sont abordés dans plusieurs parties. Chaque occurrence est rédigée
 | 5.5 | les quatre raisons de vous recontacter | — | via la sous-partie ré-identification |
 | SEC-EXP-1 | rien ne sort sans anonymisation | ce que vous faites avant d'exporter | comment le processus est outillé |
 | SEC-REI-3 | on peut vous retrouver en urgence | — | procédure et habilitations |
+| SEC-HAB-1 | — | vos différents profils d'accès (types d'utilisateurs) | comment les définir |
+| SEC-HAB-2 | — | ce que votre profil vous permet de voir (accès par défaut) | comment calibrer la granularité |
+| SEC-HAB-3 | — | comment votre accès à une DCR est validé | comment habiliter individuellement |
+| SEC-HAB-4 | — | accès administrateurs, équipe restreinte | comment restreindre les accès privilégiés |
+| SEC-HAB-6 | — | révocation en cas de départ de l'équipe projet | comment retirer les permissions |
 
 ---
 
@@ -255,8 +289,8 @@ Reprend les éléments de plan non tranchés. Les sujets techniques et éditoria
 ## Décomptes
 
 - Partie 1 : 25 points (+1 : ajout du 3.2.2, Comité Stratégique ; +1 : ajout du 3.1.3, recherche ; -1 : fusion de 8.4 (a)/(b) en un seul point ; +2 : ajout du 8.2.2.1 et du 9.1, information individuelle et campagne publique préalable ; -1 : retrait du 7.2, restructuration de 1.5 en 1.5/1.6 ; +4 : détail de 1.5 en quatre sous-parties, ajout du 5.8, SEC-LOG-4, SEC-LOG-5, SEC-LOG-6 ; +1 : ajout du SEC-ESP-2, pseudonyme par espace de travail ; -2 : retrait de SEC-LOG-5 et SEC-LOG-6, relatifs aux habilitations plutôt qu'au chiffrement)
-- Partie 2 : 5 points
+- Partie 2 : 11 points (+6 : refonte complète en 2.1-2.6 — équipe EDS, types d'utilisateurs, interfaces, règles d'accès, règles DCR, utilisateurs avancés ; ajout du 6.1, SEC-HAB-1, SEC-HAB-2, SEC-HAB-3, SEC-HAB-4, SEC-HAB-6, ces cinq derniers déjà comptés en partie 3 — voir *Points traités plusieurs fois*)
 - Partie 3 : 27 points
-- Total, occurrences uniques : 49 points
+- Total, occurrences uniques : 50 points (+1 : ajout du 6.1, seul point réellement nouveau — les autres ajouts de la partie 2 sont des répétitions de points déjà comptés en partie 3)
 
 Ces chiffres correspondent à l'état de la checklist au moment de l'établissement du plan. La checklist n'étant pas connectée au dépôt, ils ne se mettent pas à jour seuls et doivent être revérifiés à la main si le plan évolue.

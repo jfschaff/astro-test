@@ -139,7 +139,58 @@ En tant qu'utilisateur de l'EDS, vous vous engagez à respecter les règles de f
 @TODO : clarifier les types d'utilisateurs. Ex. médecin DIM ? Voir si on les met dans Partie 2 ou Partie 3 ou autre.
 
 
-### 2.1 Les deux interfaces principales de l'EDS La Réunion
+### 2.1 L'équipe EDS
+
+Le fonctionnement de l'EDS est possible car y est associée une équipe pluriprofessionnelle dédiée alliant médecins, ingénieurs et spécialistes des données.
+
+Celle-ci est composée des personnes suivantes.
+
+#### Dr Delphine POUSSIN – Cheffe de service du Département d'Information Médicale (DIM), Responsable de l'EDS La Réunion
+
+En tant que cheffe de service du DIM, le Dr POUSSIN est responsable de l'EDS. Elle joue notamment un rôle clé dans les orientations stratégiques de l'EDS (préparation du Comité Stratégique) et, en tant que responsable du DIM, sur les sujets sensibles, comme par exemple la ré-identification des patients.
+
+#### Dr Michel BOHRER – Ancien chef de service du Département d'Information Médicale, Ancien responsable de l'EDS La Réunion
+
+Le projet de construction de l'EDS a été initié conjointement par la Direction de la Recherche et de l'Innovation et par le Dr BOHRER lorsqu'il était chef de service. À ce titre, le Dr BOHRER a joué un rôle clé dans de nombreux choix stratégiques, d'architecture et de fonctionnement de l'EDS.
+
+#### M. Jean-François SCHAFF, _PhD_ – Responsable opérationnel de l'EDS La Réunion
+
+M. SCHAFF anime l'équipe opérationnelle de l'EDS. À ce titre, il est garant du bon fonctionnement du système dans son ensemble (opérations) et contribue à faire évoluer l'EDS dans le sens d'une amélioration du service rendu à ses utilisateurs. Il joue un rôle de chef de projet sur différents projets d'utilisation ou d'évolution de l'EDS. Il est aussi responsable des questions de conformité et de sécurité de l'EDS, en lien avec les directions contributrices (DSI, RSSI).
+
+#### Dr Romain MORTIER – Médecin de santé publique EDS
+
+Le Dr MORTIER est particulièrement impliqué dans les questions des données intégrées à l'EDS La Réunion.
+
+#### M. Stanislas BRODIN – Ingénieur EDS
+
+M. BRODIN est ingénieur de formation et a une longue expérience de développement web. Il joue un double rôle opérationnel (fonctionnement courant de l'EDS) et de chef de projet technique pour l'évolution de l'EDS : intégration de nouvelles sources de données, amélioration des systèmes existants, montée en charge, etc.
+
+#### Contacts clés
+
+Pour contacter l'équipe opérationnelle de l'EDS, utilisez l'adresse <eds@chu-reunion.fr>.
+
+Autres contacts :
+- Dr Delphine POUSSIN – Responsable de l'EDS La Réunion – <delphine.poussin@chu-reunion.fr>
+- Jean-François SCHAFF, _PhD_ – Responsable opérationnel de l'EDS La Réunion – <jean-francois.schaff@chu-reunion.fr>
+- Dr Romain MORTIER – Médecin de santé publique EDS – <romain.mortier@chu-reunion.fr>
+
+### 2.2 Les types d'utilisateurs de l'EDS La Réunion
+
+Il existe trois types d'utilisateurs de l'EDS La Réunion :
+1. utilisateurs de l'EDS : agents du CHU, chercheurs et collaborateurs, etc.
+2. utilisateurs avancés : par exemple les agents du DIM qui peuvent être destinataires de données pseudonymisées dans le cadre de leurs missions ;
+3. administrateurs : membres de l'équipe opérationnelle et administrateurs systèmes, qui ont des accès privilégiés à l'EDS dans le cadre de leurs missions.
+
+Par ailleurs, la plateforme Arkhn comporte les profils types suivants :
+- "Data user" (utilisateurs de l'EDS)
+- "Data manager" (utilisateurs avancés et administrateurs)
+- "Data engineer" (administrateurs)
+
+Cette partie du guide s'adresse aux utilisateurs et utilisateurs avancés de l'EDS. La partie 3 — "Guide d'administration" s'adresse aux administrateurs.
+
+*Liens avec le référentiel EDS :* [6.4](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#6.4), [SEC-HAB-1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-HAB-1), [SEC-HAB-4](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-HAB-4)
+
+### 2.3 Les deux interfaces principales de l'EDS La Réunion
 
 L'EDS La Réunion comporte deux interfaces principales : « Arkhn Explore » et les « _Data Clean Rooms_ » (aussi appelées « bulles sécurisées »).
 
@@ -147,7 +198,7 @@ L'EDS La Réunion comporte deux interfaces principales : « Arkhn Explore » e
 
 Explore permet d'afficher des données statistiques et agrégées de l'EDS (par exemple un nombre ou une distribution de patients satisfaisant à des critères donnés). À ce titre, cette interface est la moins sensible car elle n'expose aucune donnée permettant d'identifier les patients. Elle est donc utilisable assez largement par les agents du CHU de La Réunion.
 
-Cette interface est aussi limitée : elle permet essentiellement de réaliser un premier dénombrement des patients potentiellement intéressants pour une étude donnée (pré-screening).
+Cette interface est aussi limitée : elle permet essentiellement de réaliser un premier dénombrement des patients potentiellement intéressants à inclure dans une étude sur données (pré-screening).
 
 #### Les _Data Clean Rooms_ (DCR)
 
@@ -157,54 +208,76 @@ En pratique, il s'agit d'un système Linux Debian accessible via un navigateur w
 
 Les DCR contiennent potentiellement des données sensibles, et font donc l'objet de mesures de sécurité spécifiques. L'import et l'export de données y sont contrôlés par les administrateurs de l'EDS.
 
-### 2.2 Règles d'accès à l'EDS La Réunion
+### 2.4 Règles d'accès à l'EDS La Réunion
 
 En tant qu'utilisateur de l'EDS La Réunion, vous vous engagez à respecter les règles d'utilisation exposées ci-dessous.
 
 Tout agent du CHU de La Réunion peut demander un accès à l'EDS. Par défaut, cet accès permettra de visualiser les données agrégées (donc non identifiantes) présentées par le module Arkhn Explore (statistiques).
 
+*Liens avec le référentiel EDS :* [6.1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#6.1), [SEC-HAB-2](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-HAB-2)
+
 Les personnes externes qui collaborent avec des investigateurs du CHU de La Réunion sur des projets qui ont été approuvés par le CSER sont aussi autorisés à accéder à l'EDS La Réunion.
 
-En tant qu'utilsitaure de l'EDS, il vous est strictement interdit de partager votre accès à un tiers. Tout contournement volontaire de cette mesure de sécurité pourra provoquer la révocation immédiate de votre accès à l'EDS.
+*Liens avec le référentiel EDS :* [6.3](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#6.3)
+
+En tant qu'utilisateur de l'EDS, il vous est strictement interdit de partager votre accès à un tiers. Tout contournement volontaire de cette mesure de sécurité pourra provoquer la révocation immédiate de votre accès à l'EDS.
 
 Si vous pensez que vos accès à l'EDS ont été compromis, vous vous engagez à en informer l'équipe opérationnelle dans les plus brefs délais à l'adresse eds@chu-reunion.fr ou par téléphone. Vos accès seront alors réinitialisés et une vérification sera faite pour s'assurer qu'aucun accès illégitime n'a eu lieu.
 
-*Liens avec le référentiel EDS :* [6.1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#6.1)
+### 2.5 Règles d'utilisation des DCR
 
-### 2.3 Règles d'utilisation des DCR
+#### 2.5.1 Création d'une DCR
 
-#### 2.3.1 Création d'une DCR
-
-La création d'une DCR se fait sur demande de l'investigateur principal, qui indique quels membres de l'équipe projet doit y avoir accès.
+La création d'une DCR se fait sur demande de l'investigateur principal, qui indique quels membres de l'équipe projet doivent y avoir accès.
 
 L'investigateur principal doit être salarié du CHU de La Réunion. Il est garant du bon respect des règles d'accès par les membres de son équipe.
 
 Pour les internes, c'est le directeur de thèse, ou une personne du CHU qui le représente, qui fait la demande d'ouverture de la DCR.
 
-#### 2.3.2 Export de données dans une DCR
+*Liens avec le référentiel EDS :* [SEC-ESP-1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-ESP-1)
 
-Les données strictement nécessaires à l'étude, et dont l'accès à l'équipe a été validée par le CSER, sont mises à votre dispostion par l'équipe opérationnelle de l'EDS.
+#### 2.5.2 Accès à une DCR
+
+Une fois une DCR créée, seules les personnes de l'équipe identifiée lors de la demande d'avis éthique sont autorisées à accéder à la DCR.
+
+En cas de départ d'une personne de l'équipe projet, l'investigateur s'engage à informer l'équipe opérationnelle de l'EDS de ce départ pour que l'accès correspondant soit révoqué.
+
+En cas de besoin d'ajout d'une nouvelle personne à une équipe projet déjà constituée, l'investigateur principal adresse une demande à l'équipe opérationnelle de l'EDS par adresse email eds@chu-reunion.fr en précisant le rôle de la nouvelle personne dans l'équipe.
+
+En cas de doute, l'équipe opérationnelle pourra consulter le CSER pour valider la modification de l'équipe projet.
+
+*Liens avec le référentiel EDS :* [SEC-HAB-3](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-HAB-3), [SEC-HAB-6](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-HAB-6)
+
+#### 2.5.3 Export et import de données dans une DCR
+
+Les données strictement nécessaires à l'étude, et dont l'accès a été validé par le CSER, sont mises à votre disposition par l'équipe opérationnelle de l'EDS.
 
 *Liens avec le référentiel EDS :* [6.3](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#6.3)
 
 Pour récupérer les données, vous devez 
+@TODO description de la manirer dont on récupère les données.
+
+Il vous est possible de copier / coller du texte de l'extérieur de la DCR vers la DCR, par exemple du code informatique.
+
+En utilisant l'EDS, vous vous engagez à respecter les règles suivantes :
+- ne pas importer de données sensibles dans une DCR sans avoir vérifié, si besoin avec l'équipe opérationnelle de l'EDS, de la légalité de cet import ;
+- ne pas exporter de données personnelles hors de la DCR, notamment des données pseudonymisées, et ne pas tenter de contourner les freins techniques existants à de tels exports.
+
+Vous vous engagez à n'exporter que des données anonymes, comme par exemple des résultats statistiques obtenus sur un ensemble de patients, ne permettant pas la ré-identification desdits patients, ou des figures générées à partir de données comparables pour la publication de vos résultats.
+
+Étant entendu que le simple retrait d'une clé pseudonyme d'un jeu de données ne constitue pas nécessairement une anonymisation fiable et conforme des données, vous vous engagez à ne pas tenter une telle anonymisation en autonomie.
+
+Si un tel besoin est identifié, vous vous engagez à contacter l'équipe opérationnelle pour travailler avec elle à l'anonymisation de votre jeu de données.
+
+*Liens avec le référentiel EDS :* [SEC-EXP-1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-EXP-1), [SEC-EXP-2](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-EXP-2)
+
+Tout contournement ou tentative de contournement de ces mesures de protection des données personnelles pourra provoquer la révocation immédiate de votre accès à l'EDS.
+
+### 2.6 Accès pour les utilisateurs avancés
+
+@TODO
 
 
-#### 2.3.3 Qui peut accéder à une DCR
-
-Une fois une DCR créée, seule les personnes de l'équipe identifée 
-
-
-
-### 2.X Règles d'utilisation spécifiques pour le DIM ?
-
-
-
-
-
-
-- contacts clés
-- 
 
 
 
@@ -212,7 +285,7 @@ Une fois une DCR créée, seule les personnes de l'équipe identifée
 ## Partie 3 — Guide d'administration
 
 à prévoir :
-- procédure de révocation des acces à des personnes ne respectant pas les règles
+- procédure de révocation des accès à des personnes ne respectant pas les règles
 - procédure de réidentification
 - procédure de réidentification d'urgence
 - procédure de réinitialition d'un compte compromis
@@ -237,3 +310,14 @@ Pour des recherches réalisées par les professionnels du responsable de traitem
 
 Par ailleurs, l’EDS sera utilisé pour
 - **F9** Exporter des données pseudonymisées vers d’autres EDS ou d’autres systèmes conformes ou autorisés par la CNIL
+
+
+## Procédure de révocation des accès
+
+
+## Procédures de réidentification
+### Réidentification d'urgence
+
+
+## Procédure de réinitialisation d'un compte compromis
+
