@@ -106,15 +106,11 @@ Comprendre ce qu'est l'EDS La Réunion, ce qu'il permet, ce qu'il interdit, et c
 
 ---
 
-## Partie 2 — Guide utilisateurs
+## Partie 2 — Guide d'utilisation
 
 Ce qu'un porteur de projet peut faire avec les données, ce qu'il doit demander, et à quelles conditions. Couvre aussi bien les équipes internes au CHU de La Réunion que les équipes externes.
 
-### 2.1 L'équipe EDS
-
-Présentation nominative de l'équipe pluriprofessionnelle de l'EDS (DIM, responsable opérationnel, ingénieur, médecin de santé publique) et contacts clés. Pas de point de référentiel associé — contenu organisationnel.
-
-### 2.2 Les types d'utilisateurs de l'EDS La Réunion
+### 2.1 Les types d'utilisateurs de l'EDS La Réunion
 
 Trois profils (utilisateurs, utilisateurs avancés, administrateurs) et leur correspondance avec les profils Arkhn (Data user / Data manager / Data engineer).
 
@@ -123,6 +119,10 @@ Trois profils (utilisateurs, utilisateurs avancés, administrateurs) et leur cor
 | 6.4 | Personnel interne habilité (utilisateurs avancés), destinataire de données pseudonymisées |
 | SEC-HAB-1 | Profils d'habilitation différenciés |
 | SEC-HAB-4 | Accès privilégiés (administrateurs) réservés à une équipe restreinte |
+
+### 2.2 L'équipe EDS
+
+Présentation nominative de l'équipe pluriprofessionnelle de l'EDS (DIM, responsable opérationnel, ingénieur, médecin de santé publique) et contacts clés. Pas de point de référentiel associé — contenu organisationnel.
 
 ### 2.3 Les deux interfaces principales de l'EDS La Réunion
 

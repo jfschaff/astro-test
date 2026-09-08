@@ -129,17 +129,29 @@ Sauf exception, aucune donnée ne peut sortir de l'EDS La Réunion sans avoir é
 L'EDS La Réunion bénéficie toutefois d'une dérogation : des données pseudonymisées peuvent être exportées vers un autre système présentant un niveau de conformité et de sécurité équivalent, par exemple un autre entrepôt de données de santé autorisé.
 
 
-## Partie 2 — Guide utilisateur
+## Partie 2 — Guide d'utilisation
 
-Cette partie du guide s'adresse aux utilisateurs de l'EDS La Réunion, c'est-à-dire aux personnes qui possèdent un compte.
+Cette partie du guide s'adresse aux utilisateurs de l'EDS La Réunion, c'est-à-dire aux personnes qui possèdent un compte pour lire et analyser des données.
 
-En tant qu'utilisateur de l'EDS, vous vous engagez à respecter les règles de fonctionnement de l'EDS.
+### 2.1 Les types d'utilisateurs de l'EDS La Réunion
 
+Il existe trois types d'utilisateurs de l'EDS La Réunion :
+1. utilisateurs de l'EDS : agents du CHU, chercheurs et collaborateurs, etc.
+2. utilisateurs avancés : par exemple les agents du DIM qui peuvent être destinataires de données pseudonymisées dans le cadre de leurs missions ;
+3. administrateurs : membres de l'équipe opérationnelle et administrateurs systèmes, qui possèdent des accès privilégiés à l'EDS et/ou aux bases de données et/ou machines dans le cadre de leurs missions.
 
-@TODO : clarifier les types d'utilisateurs. Ex. médecin DIM ? Voir si on les met dans Partie 2 ou Partie 3 ou autre.
+Par ailleurs, la plateforme Arkhn comporte les profils types suivants :
+- "Data user" pour les utilisateurs de l'EDS ;
+- "Data manager" pour les utilisateurs avancés et administrateurs ;
+- "Data engineer" pour certains administrateurs.
 
+Cette partie du guide s'adresse aux utilisateurs et utilisateurs avancés de l'EDS. La partie 3 — "Guide d'administration" s'adresse aux administrateurs.
 
-### 2.1 L'équipe EDS
+En tant qu’utilisateur, vous vous engagez à respecter les règles exposées ci-dessous.
+
+*Liens avec le référentiel EDS :* [6.4](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#6.4), [SEC-HAB-1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-HAB-1), [SEC-HAB-4](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-HAB-4)
+
+### 2.2 L'équipe EDS
 
 Le fonctionnement de l'EDS est possible car y est associée une équipe pluriprofessionnelle dédiée alliant médecins, ingénieurs et spécialistes des données.
 
@@ -174,22 +186,6 @@ Autres contacts :
 - Jean-François SCHAFF, _PhD_ – Responsable opérationnel de l'EDS La Réunion – <jean-francois.schaff@chu-reunion.fr>
 - Dr Romain MORTIER – Médecin de santé publique EDS – <romain.mortier@chu-reunion.fr>
 
-### 2.2 Les types d'utilisateurs de l'EDS La Réunion
-
-Il existe trois types d'utilisateurs de l'EDS La Réunion :
-1. utilisateurs de l'EDS : agents du CHU, chercheurs et collaborateurs, etc.
-2. utilisateurs avancés : par exemple les agents du DIM qui peuvent être destinataires de données pseudonymisées dans le cadre de leurs missions ;
-3. administrateurs : membres de l'équipe opérationnelle et administrateurs systèmes, qui ont des accès privilégiés à l'EDS dans le cadre de leurs missions.
-
-Par ailleurs, la plateforme Arkhn comporte les profils types suivants :
-- "Data user" (utilisateurs de l'EDS)
-- "Data manager" (utilisateurs avancés et administrateurs)
-- "Data engineer" (administrateurs)
-
-Cette partie du guide s'adresse aux utilisateurs et utilisateurs avancés de l'EDS. La partie 3 — "Guide d'administration" s'adresse aux administrateurs.
-
-*Liens avec le référentiel EDS :* [6.4](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#6.4), [SEC-HAB-1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-HAB-1), [SEC-HAB-4](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-HAB-4)
-
 ### 2.3 Les deux interfaces principales de l'EDS La Réunion
 
 L'EDS La Réunion comporte deux interfaces principales : « Arkhn Explore » et les « _Data Clean Rooms_ » (aussi appelées « bulles sécurisées »).
@@ -210,13 +206,11 @@ Les DCR contiennent potentiellement des données sensibles, et font donc l'objet
 
 ### 2.4 Règles d'accès à l'EDS La Réunion
 
-En tant qu'utilisateur de l'EDS La Réunion, vous vous engagez à respecter les règles d'utilisation exposées ci-dessous.
-
 Tout agent du CHU de La Réunion peut demander un accès à l'EDS. Par défaut, cet accès permettra de visualiser les données agrégées (donc non identifiantes) présentées par le module Arkhn Explore (statistiques).
 
 *Liens avec le référentiel EDS :* [6.1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#6.1), [SEC-HAB-2](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-HAB-2)
 
-Les personnes externes qui collaborent avec des investigateurs du CHU de La Réunion sur des projets qui ont été approuvés par le CSER sont aussi autorisés à accéder à l'EDS La Réunion.
+Les personnes externes qui collaborent avec des investigateurs du CHU de La Réunion sur des projets qui ont été approuvés par le CSER sont aussi autorisées à accéder à l'EDS La Réunion.
 
 *Liens avec le référentiel EDS :* [6.3](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#6.3)
 
@@ -278,6 +272,8 @@ Tout contournement ou tentative de contournement de ces mesures de protection de
 @TODO
 
 
+
+- interdire les tentatives de réidentification dans les DCR
 
 
 
