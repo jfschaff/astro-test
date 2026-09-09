@@ -318,13 +318,15 @@ Par ailleurs, l’EDS sera utilisé pour
 @TODO
 
 
-## PROC-REID-URG Procédure de ré-identification en cas d'urgence médicale
+## PROC-REID-URG Procédure de réidentification en cas d'urgence médicale
 
 *Liens avec le référentiel EDS :* [5.5](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#5.5), [SEC-REI-3](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-REI-3), [SEC-REI-4](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-REI-4), [SEC-REI-5](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-REI-5)
 
-### Dans quelles conditions envisager de déclencher la procédure de ré-identification en cas d'urgence médicale ?
+### Qui déclenche la procédure de réidentification en cas d'urgence médicale ?
 
-Vous êtes utilisateur ou administrateur de l'EDS et avez accès à des données pseudonymisées de personnes dans l'exercice de vos missions.
+Tout utilisateur ou administrateur de l'EDS qui a accès à des données pseudonymisées dans l'exercice de ses missions peut déclencher la procédure de réidentification en cas d'urgence médicale.
+
+### Dans quelles conditions envisager de déclencher la procédure de réidentification en cas d'urgence médicale ?
 
 Vous :
 - identifiez un "risque sanitaire auquel [une personne de votre cohorte] est exposée" ou
@@ -358,42 +360,48 @@ Dans le respect du secret médical, le rapport n'est pas transmis à l'équipe o
 
 *Liens avec le référentiel EDS :* [9.2](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#9.2), [9.4](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#9.4), [9.5](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#9.5), [9.7](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#9.7), [SEC-REI-1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-REI-1)
 
+### Qui déclenche la procédure d'exercice des droits ?
+
+Le Délégué à la Protection des Données du CHU de La Réunion (DPO) est la seule personne habilitée à déclencher la procédure.
+
+Si une telle demande est adressée directement à une autre personne que le DPO (par exemple à un membre de l'équipe opérationnelle EDS), la personne demandeuse doit être redirigées vers le DPO.
+
 ### Dans quelles conditions envisager de déclencher la procédure d'exercice des droits ?
 
-Vous êtes DPO du CHU de La Réunion et recevez une demande d'exercice de droits relative à l'EDS (accès, rectification, effacement, limitation du traitement, opposition).
+Le DPO du CHU de La Réunion reçoit une demande d'exercice de droits relative à l'EDS (accès, rectification, effacement, limitation du traitement, opposition).
 
-L'EDS sait gérer l'opposition, c'est-à-dire tient une liste de patients s'étant opposés à l'intégration de leurs données, et est aussi en mesure d'exporter les données relatives à une personne (droit d'accès), mais ne peut pas techniquement rectifier (modifier) les données qui y sont inscrites, car celles-ci sont des transformations de données issues du SIH. Aussi, en cas de demande de modification de données, il convient de se demander s'il y a lieu de modifier les données des sources de données (DPI, GAM, etc.) et non celles de l'EDS.
+L'EDS sait gérer l'opposition, c'est-à-dire tient une liste de patients s'étant opposés à l'intégration de leurs données, et est aussi en mesure d'exporter les données relatives à une personne (droit d'accès), mais ne peut pas techniquement rectifier (modifier) les données qui y sont inscrites, car celles-ci sont des données issues du SIH qui sont traitées en masse (même code pour tous les patients, même codes pour tous les professionnels) sans possibilité de traitement individualisé (pas d'exception personne par personne). Aussi, en cas de demande de modification de données, il convient de se demander s'il y a lieu de modifier les données à la source (DPI, GAM, etc.) et non celles de l'EDS. Les éventuelles modification à la source seraient automatiquement répercutées dans l'EDS.
 
 L'EDS n'est pas en mesure de gérer techniquement une demande de limitation du traitement.
 
-En cas d'incapacité à répondre favorablement à la demande de limitation, le patient pourra donc être inscrit comme s'étant opposé, de sorte que ces données ne soient plus intégrées à l'EDS.
+En cas d'incapacité à répondre favorablement à la demande de limitation du traitement, la personne pourra donc être inscrite comme s'étant opposée, de sorte que ses données ne soient plus intégrées à l'EDS.
 
 ### Comment déclencher la procédure d'exercice des droits ?
 
-Vous contactez l'équipe opérationnelle de l'EDS à l'adresse <eds@chu-reunion.fr> en indiquant l'identité du patient :
+Le DPO contacte l'équipe opérationnelle de l'EDS à l'adresse <eds@chu-reunion.fr> en indiquant l'identité du patient :
 - nom
 - prénoms
 - sexe
 - date de naissance complète
 - IPP si vous en avez connaissance
 
-s'il y a lieu d'exporter des données, et si oui lesquelles (droit d’accès) ou s'il faut inscrire le patient comme s'étant opposé (en cas de demande d'opposition, d'effacement, ou de limitation du traitement ne pouvant être satisfaite).
+et, s'il y a lieu d'exporter des données, lesquelles (cas du droit d’accès) ou s'il faut inscrire le patient comme s'étant opposé (en cas de demande d'opposition, d'effacement, ou de limitation du traitement ne pouvant être satisfaite).
 
 ### Quelles suites sont données ?
 
+L'équipe opérationnelle vérifie :
+- si la personne demandeuse est déjà inscrite sur la liste d'opposition ;
+- si ce n'est le cas, si des données relatives à cette personne sont inscrites dans l'EDS.
+
 #### Demande d’accès
 
-Si des données relatives à cette personne sont intégrées à l'EDS, l'équipe opérationnelle exporte les données demandées de la base pivot de l'EDS et les transmet au DPO de manière sécurisée.
+Si des données relatives à la personne demandeuse sont intégrées à l'EDS, l'équipe opérationnelle exporte les données demandées de la base pivot de l'EDS et les transmet de manière sécurisée au DPO.
 
 Sinon, elle informe le DPO qu'aucune donnée relative à cette personne ne se trouve dans l'EDS.
 
 #### Demande de limitation du traitement ne pouvant être satisfaite, d'opposition ou d'effacement
 
-L'équipe opérationnelle vérifie :
-- si cette personne est déjà inscrite sur la liste d'opposition ;
-- si ce n'est pas le cas, si des données relatives à cette personne sont inscrites dans l'EDS.
-
-Si besoin, elle inscrit la personne sur la liste d'opposition.
+Si ce n'est déjà fait, l'équipe opérationnelle inscrit la personne sur la liste d'opposition.
 
 Elle transmet un compte-rendu de l'opération au DPO indiquant notamment le délai d'effacement des éventuelles données de l'EDS (typiquement 24h, le temps que la tâche "run_all" s'exécute).
 
