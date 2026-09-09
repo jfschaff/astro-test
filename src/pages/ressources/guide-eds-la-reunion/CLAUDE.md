@@ -59,6 +59,7 @@ Règles :
 - On écrit **le CHU de La Réunion** pour le responsable de traitement. Éviter « l'établissement », « le RT », « le responsable de traitement » comme désignation courante dans le corps du texte. Le terme juridique « responsable de traitement » reste employable quand on cite ou explique le référentiel.
 - **« La Réunion » s'écrit toujours avec deux majuscules**, y compris en milieu de phrase. Jamais « la Réunion », jamais « la réunion ».
 - **« Comité Scientifique, Ethique et Recherche »** s'écrit toujours ainsi, **sans accent sur le E majuscule d'Ethique**. En reprise proche, on écrit simplement **CSER**.
+- **« réidentification » / « réidentifier »** s'écrivent toujours sans trait d'union dans le guide (`guide.md`, `PLAN.md`, `CLAUDE.md`), même si le référentiel utilise l'orthographe avec trait d'union. Dans le fichier du référentiel (`referentiel-entrepot-de-donnees-de-sante-de-la-cnil.astro`), on garde l'orthographe telle qu'elle figure dans le texte original de la CNIL, même si elle n'est pas cohérente d'un point à l'autre — ne pas l'harmoniser.
 
 ---
 

@@ -82,7 +82,7 @@ Enfin, toute demande adressée à la gouvernance doit justifier, catégorie de d
 
 *Liens avec le référentiel EDS :* [5.4](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#5.4)
 
-### 1.5 Sécurisation des données identifiantes, pseudonymisation et ré-identification des patients
+### 1.5 Sécurisation des données identifiantes, pseudonymisation et réidentification des patients
 
 Toutes les données de l'EDS La Réunion ne sont pas traitées de la même façon.
 
@@ -100,9 +100,9 @@ Différents pseudonymes sont utilisés pour sécuriser l'identité des patients 
 
 *Liens avec le référentiel EDS :* [SEC-PSE](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-PSE), [SEC-ESP-2](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-ESP-2)
 
-#### Ré-identification
+#### Réidentification
 
-L'EDS est conçu de manière qu'il ne soit pas possible à ses utilisateurs, hors de certains usages autorisés, de ré-identifier les patients, c'est-à-dire de retrouver leur identité.
+L'EDS est conçu de manière qu'il ne soit pas possible à ses utilisateurs, hors de certains usages autorisés, de réidentifier les patients, c'est-à-dire de retrouver leur identité.
 
 L'accès aux données identifiantes est donc très restreint : il n'est ouvert qu'aux personnes qui en ont besoin pour l'une des raisons autorisées ainsi que, par dérogation propre à l'EDS La Réunion, à l'équipe de soin d'un patient pour les besoins de sa prise en charge.
 
@@ -110,9 +110,9 @@ L'accès aux données identifiantes est donc très restreint : il n'est ouvert q
 
 Ces raisons de recontacter un patient sont détaillées au point [5.5 du référentiel de la CNIL](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#5.5).
 
-#### Ré-identification au bénéfice d'un patient
+#### Réidentification au bénéfice d'un patient
 
-**Notez qu'une procédure spécifique de ré-identification existe en cas d'urgence médicale ou si cette ré-identification bénéficie au patient, par exemple pour lui proposer des mesures de prévention ou de soin.**
+**Notez qu'une procédure spécifique de réidentification existe en cas d'urgence médicale ou si cette réidentification bénéficie au patient, par exemple pour lui proposer des mesures de prévention ou de soin.**
 
 **Si vous êtes utilisateur de l'EDS et que vous identifiez une telle situation, pensez donc à vous poser la question de la pertinence de déclencher cette procédure.**
 
@@ -159,7 +159,7 @@ Celle-ci est composée des personnes suivantes.
 
 #### Dr Delphine POUSSIN – Cheffe de service du Département d'Information Médicale (DIM), Responsable de l'EDS La Réunion
 
-En tant que cheffe de service du DIM, le Dr POUSSIN est responsable de l'EDS. Elle joue notamment un rôle clé dans les orientations stratégiques de l'EDS (préparation du Comité Stratégique) et, en tant que responsable du DIM, sur les sujets sensibles, comme par exemple la ré-identification des patients.
+En tant que cheffe de service du DIM, le Dr POUSSIN est responsable de l'EDS. Elle joue notamment un rôle clé dans les orientations stratégiques de l'EDS (préparation du Comité Stratégique) et, en tant que responsable du DIM, sur les sujets sensibles, comme par exemple la réidentification des patients.
 
 #### Dr Michel BOHRER – Ancien chef de service du Département d'Information Médicale, Ancien responsable de l'EDS La Réunion
 
@@ -257,7 +257,7 @@ En utilisant l'EDS, vous vous engagez à respecter les règles suivantes :
 - ne pas importer de données sensibles dans une DCR sans avoir vérifié, si besoin avec l'équipe opérationnelle de l'EDS, de la légalité de cet import ;
 - ne pas exporter de données personnelles hors de la DCR, notamment des données pseudonymisées, et ne pas tenter de contourner les freins techniques existants à de tels exports.
 
-Vous vous engagez à n'exporter que des données anonymes, comme par exemple des résultats statistiques obtenus sur un ensemble de patients, ne permettant pas la ré-identification desdits patients, ou des figures générées à partir de données comparables pour la publication de vos résultats.
+Vous vous engagez à n'exporter que des données anonymes, comme par exemple des résultats statistiques obtenus sur un ensemble de patients, ne permettant pas la réidentification desdits patients, ou des figures générées à partir de données comparables pour la publication de vos résultats.
 
 Étant entendu que le simple retrait d'une clé pseudonyme d'un jeu de données ne constitue pas nécessairement une anonymisation fiable et conforme des données, vous vous engagez à ne pas tenter une telle anonymisation en autonomie.
 
@@ -343,15 +343,15 @@ Vous contactez la Cheffe de Service du DIM par email à l'adresse <delphine.pous
 
 Une fois les échanges entre vous terminés (email, téléphone, etc.), la Cheffe de Service établit un rapport succinct indiquant sa décision, qui peut être :
 1. de ne pas recontacter la personne ;
-2. de ré-identifier la personne pour la contacter et lui proposer une prise en charge.
+2. de réidentifier la personne pour la contacter et lui proposer une prise en charge.
 
 Une explication succincte de la logique de cette décision est inscrite dans le rapport.
 
-Si la ré-identification est décidée, la Cheffe de Service du DIM contacte l'équipe opérationnelle EDS en indiquant qu'une décision de ré-identification a été prise suite à l'alerte d'un utilisateur, ainsi que les données identifiantes utiles pour recontacter la personne et la prendre en charge (nom, prénom, date de naissance, IPP, etc.).
+Si la réidentification est décidée, la Cheffe de Service du DIM contacte l'équipe opérationnelle EDS en indiquant qu'une décision de réidentification a été prise suite à l'alerte d'un utilisateur, ainsi que les données identifiantes utiles pour recontacter la personne et la prendre en charge (nom, prénom, date de naissance, IPP, etc.).
 
-L'équipe opérationnelle contacte l'utilisateur pour obtenir les informations nécessaires à la ré-identification (DCR concernée, clé de pseudonymisation, etc.) et transmet l'identité de la personne à la Cheffe de Service du DIM, qui inscrit les données dans le rapport de ré-identification.
+L'équipe opérationnelle contacte l'utilisateur pour obtenir les informations nécessaires à la réidentification (DCR concernée, clé de pseudonymisation, etc.) et transmet l'identité de la personne à la Cheffe de Service du DIM, qui inscrit les données dans le rapport de réidentification.
 
-La Cheffe de Service du DIM prend contact avec les services de l'hôpital concernés pour déclencher la prise en charge. Elle informe l'utilisateur de l'issue de son alerte. Elle archive le rapport de ré-identification.
+La Cheffe de Service du DIM prend contact avec les services de l'hôpital concernés pour déclencher la prise en charge. Elle informe l'utilisateur de l'issue de son alerte. Elle archive le rapport de réidentification.
 
 Dans le respect du secret médical, le rapport n'est pas transmis à l'équipe opérationnelle de l'EDS.
 

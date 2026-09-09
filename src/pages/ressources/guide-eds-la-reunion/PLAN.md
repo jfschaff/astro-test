@@ -67,7 +67,7 @@ Comprendre ce qu'est l'EDS La Réunion, ce qu'il permet, ce qu'il interdit, et c
 | 3.2.3 | Le CSER rend un avis préalable systématique sur chaque projet |
 | 5.4 | Toute demande justifie les catégories de données sollicitées |
 
-### 1.5 Sécurisation des données identifiantes, pseudonymisation et ré-identification des patients
+### 1.5 Sécurisation des données identifiantes, pseudonymisation et réidentification des patients
 
 #### Chiffrement des données identifiantes
 
@@ -84,19 +84,19 @@ Comprendre ce qu'est l'EDS La Réunion, ce qu'il permet, ce qu'il interdit, et c
 | `SEC-PSE` | Le pseudonyme unique : ce que c'est, à quoi il sert — renvoi vers la sous-partie du référentiel, pas un point précis |
 | SEC-ESP-2 | Un pseudonyme distinct est généré pour chaque espace de travail (chercheurs) par rapport au cœur de l'entrepôt |
 
-#### Ré-identification
+#### Réidentification
 
 | Point | Objet |
 |---|---|
 | 6.2 | Les données identifiantes ne sont accessibles que pour les finalités du 5.5, et, par dérogation (`DER-6.2`), à l'équipe de soin des patients concernés |
 | 5.5 | Renvoi vers les quatre raisons de recontacter un patient (détail laissé au référentiel, pas reformulé dans le guide) |
 
-#### Ré-identification au bénéfice d'un patient
+#### Réidentification au bénéfice d'un patient
 
 | Point | Objet |
 |---|---|
-| 5.5 | Rappel : la ré-identification au bénéfice direct du patient fait partie des quatre raisons autorisées |
-| SEC-REI-3 | Une ré-identification reste possible en urgence médicale |
+| 5.5 | Rappel : la réidentification au bénéfice direct du patient fait partie des quatre raisons autorisées |
+| SEC-REI-3 | Une réidentification reste possible en urgence médicale |
 
 ### 1.6 Export de données hors de l'EDS
 
@@ -204,7 +204,7 @@ Comment on administre l'EDS au quotidien : qui fait quoi, selon quelle procédur
 | SEC-EXP-1 | Processus d'anonymisation documenté et démontrable |
 | SEC-EXP-2 | Circuit de validation des exports |
 
-### 3.4 Ré-identification
+### 3.4 Réidentification
 
 Existence de cette sous-partie à confirmer — voir *Sujets ouverts*.
 
@@ -252,6 +252,19 @@ Contenu pressenti : les listes exhaustives et les formulations juridiques préci
 
 ---
 
+## Procédures (PROC-*)
+
+Fiches opérationnelles détaillées, à plat après l'Annexe A dans le guide (pas de numérotation `### 3.x` — même statut que les annexes : contenu de référence, pas de vulgarisation). Ne sont pas comptées dans les décomptes ci-dessous, par cohérence avec le traitement des annexes.
+
+| Procédure | Points |
+|---|---|
+| PROC-REID-URG — Procédure de réidentification en cas d'urgence médicale | 5.5, SEC-REI-3, SEC-REI-4, SEC-REI-5 |
+| PROC-DROITS — Procédure d'exercice des droits | 9.2, 9.4, 9.5, 9.7, SEC-REI-1 |
+
+Recoupent largement les points déjà pressentis pour 3.4 (SEC-REI-1 à 5) et 3.5 (9.2, 9.4, 9.5) — voir *Sujets ouverts*. Seul point réellement nouveau : 9.7 (pérennité du droit d'opposition via les mécanismes d'alimentation).
+
+---
+
 ## Points traités plusieurs fois
 
 Ces points sont abordés dans plusieurs parties. Chaque occurrence est rédigée pour son public : la partie 1 explique le principe, la partie 2 ce que l'utilisateur doit faire, la partie 3 comment on l'administre. Les trois versions doivent rester cohérentes entre elles.
@@ -261,7 +274,7 @@ Ces points sont abordés dans plusieurs parties. Chaque occurrence est rédigée
 | 6.2 | pourquoi les données identifiantes sont à part | — | comment cloisonner et contrôler |
 | 6.4 | — | ce à quoi vous avez droit | comment habiliter |
 | 9.2 | quels sont vos droits | — | comment les instruire |
-| 5.5 | les quatre raisons de vous recontacter | — | via la sous-partie ré-identification |
+| 5.5 | les quatre raisons de vous recontacter | — | via la sous-partie réidentification |
 | SEC-EXP-1 | rien ne sort sans anonymisation | ce que vous faites avant d'exporter | comment le processus est outillé |
 | SEC-REI-3 | on peut vous retrouver en urgence | — | procédure et habilitations |
 | SEC-HAB-1 | — | vos différents profils d'accès (types d'utilisateurs) | comment les définir |
@@ -280,7 +293,7 @@ Reprend les éléments de plan non tranchés. Les sujets techniques et éditoria
 - **Statut de F5 dans `finalités.md`.** F5 (« concourir à la qualité, à la sécurité des soins et à la gestion des risques ») ne correspond à aucun des quatre items du 3.1.2 du référentiel, ni à une dérogation listée dans `derogations.md`. Fondement à clarifier avant de finaliser l'annexe A.
 - ~~**Doublon 8.4.**~~ **Résolu.** Un seul paragraphe de la section 1.3 couvre à la fois l'existence du portail de transparence et la publication de chaque réutilisation, avec un seul renvoi [8.4].
 - **Doublon 5.7.** Ce numéro porte deux exigences distinctes (réévaluation périodique de la pertinence, suppression des données devenues inutiles). Un paragraphe couvrant les deux, ou deux paragraphes avec le même renvoi ?
-- **Sous-partie 3.4 « Ré-identification ».** Section autonome du guide d'administration, ou répartition des exigences SEC-REI dans les sections existantes (3.2 pour les habilitations, 3.5 pour les droits) ?
+- **Sous-partie 3.4 « Réidentification ».** Section autonome du guide d'administration, ou répartition des exigences SEC-REI dans les sections existantes (3.2 pour les habilitations, 3.5 pour les droits) ? Élément nouveau : SEC-REI-1, 3, 4, 5 sont désormais couverts par les procédures `PROC-REID-URG` et `PROC-DROITS` (voir *Procédures*), écrites à plat plutôt que dans une sous-partie 3.4 — ce qui penche pour la répartir/supprimer plutôt que la maintenir. Seul SEC-REI-2 (recontact pour proposer une recherche) n'a encore aucune procédure associée.
 - **Point 7.2.** Retiré de la partie 1 (1.5/1.6/1.7 restructurées ne le couvrent plus) ; il ne reste traité qu'en partie 3, où le rattachement n'est pas tranché : à 3.1 (cycle de vie des données) comme actuellement, ou à une section « conservation » distincte ?
 - **Annexes.** Une annexe par partie, ou une annexe unique en fin de guide ? Le tableau ci-dessus suppose la seconde option, sans que ce soit arrêté. L'Annexe A, telle qu'écrite dans le guide, utilise un titre `## Annexe A — <titre>` à plat (pas de section `## Annexes` englobante) : à confirmer comme convention pour les annexes suivantes.
 
