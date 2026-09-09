@@ -46,7 +46,7 @@ Le RGPD repose sur deux exigences essentielles envers les personnes dont les don
 
 Les patients sont informés, lors de leur prise en charge et via des campagnes de communication, que les données recueillies sont susceptibles d'être versées dans l'EDS La Réunion.
 
-**Il est particulièrement important pour tous de savoir que les patients sont susceptibles de recevoir, après leur passage au CHU, un message les informant de la réutilisation de leurs données. Ce message peut être transmis par email, SMS ou via la messagerie sécurisée intégrée à Mon Espace Santé (MSS Citoyenne).**
+**Il est particulièrement important de savoir que les patients sont susceptibles de recevoir, après leur passage au CHU, un message les informant de la réutilisation de leurs données. Ce message peut être transmis par email, SMS ou via la messagerie sécurisée intégrée à Mon Espace Santé (MSS Citoyenne).**
 
 *Liens avec le référentiel EDS :* [8.1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#8.1), [8.2.2.1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#8.2.2.1), [9.1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#9.1) 
 
@@ -131,7 +131,7 @@ L'EDS La Réunion bénéficie toutefois d'une dérogation : des données pseudon
 
 ## Partie 2 — Guide d'utilisation
 
-Cette partie du guide s'adresse aux utilisateurs de l'EDS La Réunion, c'est-à-dire aux personnes qui possèdent un compte pour lire et analyser des données.
+Cette partie du guide s'adresse aux utilisateurs de l'EDS La Réunion, c'est-à-dire aux personnes qui possèdent un compte pour avoir accès et analyser des données.
 
 ### 2.1 Les types d'utilisateurs de l'EDS La Réunion
 
@@ -310,10 +310,91 @@ Par ailleurs, l’EDS sera utilisé pour
 
 ## Procédure de révocation des accès
 
-
-## Procédures de réidentification
-### Réidentification d'urgence
+@TODO
 
 
 ## Procédure de réinitialisation d'un compte compromis
 
+@TODO
+
+
+## PROC-REID-URG Procédure de réidentification en cas d'urgence médicale
+
+*Liens avec le référentiel EDS :* [5.5](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#5.5), [SEC-REI-3](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-REI-3)
+
+### Dans quelles conditions envisager de délencher la procédure de réidentification en cas d'urgence médicale ?
+
+Vous êtes utilisateur ou administrateur de l'EDS et avez accès à des données pseudonymisées de personnes dans l'exercice de vos missions.
+
+Vous :
+- identifier un "risque sanitaire auquel [une personne de votre cohorte] est exposée" ou
+- découvez, chez une personne de votre cohorte, des "caractéristiques génétiques pouvant être responsables d’une affection justifiant des mesures de prévention ou de soins à leur bénéfice ou au bénéfice de leur famille" ou
+-  faites des "découvertes annexes liées à l’identification de facteurs de risques et/ou d’identification syndromiques à même de modifier leur prise en charge (thérapeutique ou de suivi)".
+
+Vous estimez que cela pourrait justifier de recontacter la personne pour lui proposer une prise en charge adaptée.
+
+### Comment délencher la procédure ?
+
+Vous contactez la Cheffe de Service du DIM par email à l'adresse <delphine.poussin@chu-reunion.fr> et lui exposez la découverte que vous avez faite.
+
+### Quelles suites sont données ?
+
+Une fois les échanges entre vous terminés (email, téléphone, etc.), la Cheffe de Service établit un rapport succint indiquant sa décision, qui peut-être :
+1. de ne pas recontacter la personne ;
+2. de réidentifier la personne pour la contacter et lui proposer une prise en charge.
+
+Une explicaiton succincte de la logique de cette decison est inscrite dans le rapport.
+
+Si la réidentification est décidée, la Cheffe de Service du DIM contacte l'équipe opérationnelle EDS en indiquant qu'une décision de réidentifficaaiton a été prise suite à l'alerte d'un utilisateur, ainsi que les données identifiantes utiles pour recontacter la personne et la prendre en charge (nom, prénom, date de naissance, IPP, etc.).
+
+L'équipe opérationnelle contacte l'utilisateur pour obtenir les inforamtions nécessaires à la réidentification (DCR concernée, clé de pseudonymisation, etc.) et transmet l'identité de la personne à la Cheffe de Service du DIM, qui inscrit les données dans le rapport de réidentification.
+
+La Cheffe de Service du DIM prend contact avec les service de l'hopital concernés pour déclencher la prise en charge. Elle informe l'utilisateur de l'issue de son alerte. Elle archive le raport de réidentification.
+
+Dans le respect du sercret médical, le rapport n'est pas transmis à l'équipe opérationnelle de l'EDS.
+
+
+## PROC-DROITS Procédure d'exercice des droits
+
+*Liens avec le référentiel EDS :* [SEC-REI-1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-REI-1)
+
+### Dans quelles conditions envisager de délencher la procédure d'exercice des droits
+
+Vous êtes DPO du CHU de La Réunion et recevez une demande d'exercice de droits relative à l'EDS (accès, rectification, effacement, limitation du traitement, opposition).
+
+L'EDS sait gèrer l'opposition, c'est à dire tient une liste de patients s'étant opposés à l'intégration de leurs données, et est aussi en mesure d'exporter les données relatives à une personne (droit d'accès), mais ne peut pas techniquement réctifier (modifier) les données qui y sont inscrites, car celles-ci sont des transformations de données issues du SIH. Aussi, en cas de demande de modification de données, il convient de se demander s'il y a lieu de modifier les données des sources de données (DPI, GAM etc.) et non celles de l'EDS.
+
+L'EDS n'est pas en mesure de gérer techniquement une demande de limitation du traitement.
+
+En cas d'incapacité à répondre favorablemetn à la demande de limitation, le patient pourra donc être inscrit comme s'étant opposé, de sorte que ces données ne soient plus intégrées à l'EDS.
+
+### Comment délencher la procédure d'exercice des droits ?
+
+Vous contactez l'équipe opérationnelle de l'EDS à l'adresse <eds@chu-reunion.fr> en indiquant l'identité du patient : 
+- nom
+- prénoms
+- sexe
+- date de naissance complète
+- IPP si vous en avez connaissance
+
+s'il y a lieu d'exporter des données, et si oui lesquelles (droit d’accès) ou s'il faut inscrire le patient comme s'étant opposé (en cas de demande d'opposition, d'effacement, ou de limitation du traitement ne pouvant être satisfaite).
+
+### Quelles suites sont données ?
+
+#### Demande d’accès
+
+Si des données relative à cette personne sont intégrées à l'EDS, l'équipe opérationnelle exporte les données demandées de la base pivot de l'EDS et les transmets au DPO de manière sécurisée.
+
+Sinon, elle informe le DPO qu'aucune données relative à cette personne ne se trouve dans l'EDS.
+
+#### Demande de limitation du traitement ne pouvant être satisfaite, d'opposition ou d'effacement
+
+L'équipe opérationnelle vérifie :
+- si cette personne est déjà inscrite sur la liste d'opposition ;
+- si ce n'est pas le cas, si des données relative à cette personne sont inscrites dans l'EDS.  
+
+Si besoin, elle inscrit la personne sur la liste d'opposition.
+
+Elle transmet un compte-rendu de l'opération au DPO indiquant notamment le délai d'effacement des éventuelles données de l'EDS (typiqueemnt 24h, le temps que la tache "run_all" s'execute).
+
+Le DPO communique avec la personne concernée.
