@@ -15,6 +15,7 @@ Le guide explique le fonctionnement de l'entrepôt de données de santé du CHU 
 - Dossier : `guide-eds-la-reunion/`
 - **Un seul fichier** pour l'ensemble du guide dans un premier temps. On découpera plus tard si nécessaire.
 - Travail sur une **branche dédiée**. Ne pas commiter sur la branche principale. La pull request sera ouverte manuellement par le mainteneur quand le travail sera suffisamment avancé.
+  - Exception : dans le dépôt `astro-test` (dépôt temporaire de rédaction, voir *Chemin de base*), il est admis de travailler directement sur `master`.
 
 ---
 
@@ -23,8 +24,10 @@ Le guide explique le fonctionnement de l'entrepôt de données de santé du CHU 
 Le guide comporte trois parties :
 
 1. **Notions clés** — lue par tous, ton vulgarisé.
-2. **Guide utilisateurs** — porteurs de projet et équipes de recherche.
+2. **Guide d'utilisation** — porteurs de projet et équipes de recherche.
 3. **Guide d'administration** — angle opérationnel.
+
+Après ces trois parties viennent, dans cet ordre, une section **Annexes** puis les **Procédures** (par exemple `PROC-REID-URG`, `PROC-DROITS`). Ces sections sont autonomes, au même niveau que les parties — elles ne sont pas des sous-parties de la partie 3. En particulier, les procédures n'héritent pas automatiquement de la règle de ton de la partie 3 (voir *Ton et personne grammaticale*) : leur registre dépend de leur destinataire propre.
 
 Le plan détaillé (répartition des points du référentiel entre les parties et sous-parties) est maintenu **séparément**, dans `PLAN.md`. Ne pas dupliquer ce plan ici ni dans le guide lui-même.
 
@@ -38,7 +41,7 @@ Ce guide s'adresse aux **usagers de l'EDS** : professionnels de santé, chercheu
 
 Le « vous » employé dans les parties 1 et 2 (voir *Ton et personne grammaticale*) désigne donc cet usager professionnel, jamais un patient. Attention en particulier aux formulations comme « vos données » ou « vos soins », qui laisseraient entendre que le lecteur est le patient concerné : les patients doivent toujours être désignés à la troisième personne (« les patients », « les données des patients », « la prise en charge des patients »).
 
-Les parties **Notions clés** et **Guide utilisateurs** s'adressent aussi aux **équipes de recherche externes** au CHU de La Réunion, pas seulement aux personnels internes. Elles ont vocation à être publiées.
+Les parties **Notions clés** et **Guide d'utilisation** s'adressent aussi aux **équipes de recherche externes** au CHU de La Réunion, pas seulement aux personnels internes. Elles ont vocation à être publiées.
 
 Il faut donc éviter tout implicite qui supposerait que le lecteur travaille au CHU : ne pas renvoyer à l'intranet, à des outils internes ou à des interlocuteurs désignés par leur seul prénom ou trigramme.
 
@@ -51,6 +54,7 @@ Il faut donc éviter tout implicite qui supposerait que le lecteur travaille au 
 | L'entrepôt | **EDS La Réunion** |
 | L'entrepôt, en reprise proche | **l'EDS** |
 | Le responsable de traitement | **le CHU de La Réunion** |
+| La première instance de gouvernance (3.2.2) | **le Comité Stratégique EDS** |
 | La seconde instance de gouvernance (3.2.3) | **le Comité Scientifique, Ethique et Recherche**, ou **CSER** |
 
 Règles :
@@ -65,7 +69,7 @@ Règles :
 
 ## Ton et personne grammaticale
 
-**Parties 1 (Notions clés) et 2 (Guide utilisateurs)** : le lecteur est le plus souvent interpellé à la deuxième personne du pluriel — « vous » — notamment quand on lui explique ce qu'il peut ou doit faire.
+**Parties 1 (Notions clés) et 2 (Guide d'utilisation)** : le lecteur est le plus souvent interpellé à la deuxième personne du pluriel — « vous » — notamment quand on lui explique ce qu'il peut ou doit faire.
 
 > Vous avez interdiction d'exporter des données personnelles de l'EDS.
 
@@ -96,7 +100,7 @@ Après chaque paragraphe ou section du guide traitant d'un ou plusieurs point(s)
 Le référentiel est transcrit dans une page de ce même dépôt :
 
 ```
-/referentiel-entrepot-de-donnees-de-sante-de-la-cnil/
+/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil
 ```
 
 Chaque point du référentiel y porte une ancre dont l'identifiant est **exactement le numéro du point**. Le libellé du lien est ce même numéro.
@@ -150,9 +154,7 @@ L'organisation des annexes n'est pas tranchée (voir ci-dessous).
 
 **Plan**
 
-- **Sous-partie « Ré-identification ».** Existe-t-elle comme section autonome du guide d'administration, ou les exigences SEC-REI se répartissent-elles ailleurs ?
 - **Point 7.2.** Rattaché à la sous-partie Données du guide d'administration, ou à une section « conservation » distincte ?
-- **Annexes.** Une annexe par partie, ou une annexe unique en fin de guide ?
 
 **Technique et publication**
 
@@ -163,7 +165,7 @@ L'organisation des annexes n'est pas tranchée (voir ci-dessous).
 ## Ce qu'il ne faut pas faire
 
 - Ne pas travailler la mise en forme, les styles ou les composants tant que le contenu n'est pas stabilisé.
-- Ne pas commiter sur la branche principale ni ouvrir de pull request.
+- Ne pas commiter sur la branche principale, sauf dans le dépôt `astro-test` (voir *Emplacement et organisation*). Ne pas ouvrir de pull request : c'est toujours le mainteneur qui l'ouvre manuellement.
 - Ne pas connecter Airtable.
 - Ne pas inventer de convention de nommage de fichiers non validée.
 - Ne pas trancher seul un sujet listé ci-dessus.
