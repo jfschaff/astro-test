@@ -232,9 +232,9 @@ Pour les internes, c'est le directeur de thèse, ou une personne du CHU qui le r
 
 #### 2.5.2 Accès à une DCR
 
-Une fois une DCR créée, seules les personnes de l'équipe identifiée lors de la demande d'avis éthique sont autorisées à accéder à la DCR.
+Une fois une DCR créée, seules les investigateurs identifiés lors de la demande d'avis éthique sont autorisés à accéder à la DCR.
 
-En cas de départ d'une personne de l'équipe projet, l'investigateur s'engage à informer l'équipe opérationnelle de l'EDS de ce départ pour que l'accès correspondant soit révoqué.
+En cas de départ d'une personne de l'équipe projet, l'investigateur principal s'engage à informer l'équipe opérationnelle de l'EDS de ce départ pour que l'accès correspondant soit révoqué.
 
 En cas de besoin d'ajout d'une nouvelle personne à une équipe projet déjà constituée, l'investigateur principal adresse une demande à l'équipe opérationnelle de l'EDS par adresse email eds@chu-reunion.fr en précisant le rôle de la nouvelle personne dans l'équipe.
 
@@ -242,7 +242,24 @@ En cas de doute, l'équipe opérationnelle pourra consulter le CSER pour valider
 
 *Liens avec le référentiel EDS :* [SEC-HAB-3](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-HAB-3), [SEC-HAB-6](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-HAB-6)
 
-#### 2.5.3 Export et import de données dans une DCR
+#### 2.5.3 Fonctionnement des DCR
+
+Vous accédez aux DCR par un porotocole de bureau à distance (RDP pour _Remote Desktop Protocol_). Celui-ci est simple d'utilisation car accessible via un explorateur internet standard (Google Chrome, Microsift Edge, etc.) sans installation de votre part.
+
+à l'exception de cet accès, les DCR sont des espaces cloisonés du monde extérieur pour faciliter leur sécurisation et le respect du référentiel EDS de la CNIL.
+
+Internet n'est donc pas disponible depuis les DCR.
+
+En tant qu'utilisteur vous vous engagez :
+- à faire remonter vos difficultés à tarvailler des les DCR à l'équipe opérationnelle EDS ;
+- à ne pas tenter de contourner les mesures de cloisonnement mises en place, notamment accès à internet ;
+- à ne pas exécuter de solutions d'intelligence artificielles dans une DCR (notamment des agents basés sur des LLM).
+
+En cas de doute, vous vous engagez à contacter l'équipe opérationnelle EDS qui fera de son mieux pour vous aider à pouvoir travailler efficacement dans les DCR.
+
+*Liens avec le référentiel EDS :* [SEC-ESP-1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-ESP-1), [SEC-RES-1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-RES-1)
+
+#### 2.5.4 Export et import de données dans une DCR
 
 Les données strictement nécessaires à l'étude, et dont l'accès a été validé par le CSER, sont mises à votre disposition par l'équipe opérationnelle de l'EDS.
 
@@ -263,7 +280,7 @@ Vous vous engagez à n'exporter que des données anonymes, comme par exemple des
 
 Si un tel besoin est identifié, vous vous engagez à contacter l'équipe opérationnelle pour travailler avec elle à l'anonymisation de votre jeu de données.
 
-*Liens avec le référentiel EDS :* [SEC-EXP-1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-EXP-1), [SEC-EXP-2](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-EXP-2)
+*Liens avec le référentiel EDS :* [SEC-EXP-1](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-EXP-1), [SEC-EXP-2](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-EXP-2), [SEC-EXP-3](/astro-test/ressources/referentiel-entrepot-de-donnees-de-sante-de-la-cnil#SEC-EXP-3)
 
 Tout contournement ou tentative de contournement de ces mesures de protection des données personnelles pourra provoquer la révocation immédiate de votre accès à l'EDS.
 

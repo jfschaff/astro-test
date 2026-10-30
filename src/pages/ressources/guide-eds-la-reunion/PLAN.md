@@ -12,8 +12,8 @@ Les conventions d'écriture (nommage, ton, format des renvois) sont dans `CLAUDE
 
 | Partie | Public | Ton | Points couverts |
 |---|---|---|---|
-| 1 — Notions clés | Tous, internes comme externes | Vulgarisé en restant formel, « vous » | 20 |
-| 2 — Guide utilisateurs | Porteurs de projet, équipes de recherche internes et externes | Pratique, « vous » | 5 |
+| 1 — Notions clés | Tous, internes comme externes | Vulgarisé en restant formel, « vous » | 25 |
+| 2 — Guide d'utilisation | Porteurs de projet, équipes de recherche internes et externes | Pratique, « vous » | 13 |
 | 3 — Guide d'administration | Administrateurs et usagers particuliers de l'EDS | Opérationnel, 3ᵉ personne | 27 |
 
 Les parties 1 et 2 sont destinées à la publication. Le statut de la partie 3 n'est pas arrêté. Il sera au moins publié en interne du CHU (c'est à dire presque public) mais pas forcément sur le site web de l'EDS.
@@ -155,13 +155,21 @@ Regroupe ce qui était les anciens 2.1/2.2/2.3 (qui accède, où l'on travaille,
 | SEC-HAB-3 | Habilitation individuelle validée par une instance de gouvernance |
 | SEC-HAB-6 | Retrait immédiat des permissions dès le départ d'un membre de l'équipe |
 
-#### 2.5.3 Export et import de données dans une DCR
+#### 2.5.3 Fonctionnement des DCR
+
+| Point | Objet |
+|---|---|
+| SEC-ESP-1 | Espaces de travail étanches avec la base de l'entrepôt et étanches les uns des autres (pas d'accès internet) |
+| SEC-RES-1 | Cloisonnement réseau des flux spécifiques à l'entrepôt |
+
+#### 2.5.4 Export et import de données dans une DCR
 
 | Point | Objet |
 |---|---|
 | 6.3 | Données pseudonymisées mises à disposition des équipes habilitées |
 | SEC-EXP-1 | Seuls des jeux de données anonymes peuvent être exportés |
 | SEC-EXP-2 | Validation préalable d'un responsable pour tout export |
+| SEC-EXP-3 | Surveillance des exports et mise en quarantaine en cas de non-conformité |
 
 ### 2.6 Accès pour les utilisateurs avancés
 
@@ -302,8 +310,8 @@ Reprend les éléments de plan non tranchés. Les sujets techniques et éditoria
 ## Décomptes
 
 - Partie 1 : 25 points (+1 : ajout du 3.2.2, Comité Stratégique ; +1 : ajout du 3.1.3, recherche ; -1 : fusion de 8.4 (a)/(b) en un seul point ; +2 : ajout du 8.2.2.1 et du 9.1, information individuelle et campagne publique préalable ; -1 : retrait du 7.2, restructuration de 1.5 en 1.5/1.6 ; +4 : détail de 1.5 en quatre sous-parties, ajout du 5.8, SEC-LOG-4, SEC-LOG-5, SEC-LOG-6 ; +1 : ajout du SEC-ESP-2, pseudonyme par espace de travail ; -2 : retrait de SEC-LOG-5 et SEC-LOG-6, relatifs aux habilitations plutôt qu'au chiffrement)
-- Partie 2 : 11 points (+6 : refonte complète en 2.1-2.6 — équipe EDS, types d'utilisateurs, interfaces, règles d'accès, règles DCR, utilisateurs avancés ; ajout du 6.1, SEC-HAB-1, SEC-HAB-2, SEC-HAB-3, SEC-HAB-4, SEC-HAB-6, ces cinq derniers déjà comptés en partie 3 — voir *Points traités plusieurs fois*)
+- Partie 2 : 13 points (+6 : refonte complète en 2.1-2.6 — équipe EDS, types d'utilisateurs, interfaces, règles d'accès, règles DCR, utilisateurs avancés ; ajout du 6.1, SEC-HAB-1, SEC-HAB-2, SEC-HAB-3, SEC-HAB-4, SEC-HAB-6, ces cinq derniers déjà comptés en partie 3 — voir *Points traités plusieurs fois* ; +2 : ajout du 2.5.3 « Fonctionnement des DCR », SEC-ESP-1 (déjà compté en 2.5.1) et SEC-RES-1 (nouveau) ; +1 : ajout du SEC-EXP-3 en 2.5.4)
 - Partie 3 : 27 points
-- Total, occurrences uniques : 50 points (+1 : ajout du 6.1, seul point réellement nouveau — les autres ajouts de la partie 2 sont des répétitions de points déjà comptés en partie 3)
+- Total, occurrences uniques : 52 points (+1 : ajout du 6.1, seul point réellement nouveau lors de la refonte de la partie 2 — les autres ajouts de cette refonte sont des répétitions de points déjà comptés en partie 3 ; +2 : SEC-RES-1 et SEC-EXP-3, nouveaux dans le guide, ajoutés en 2.5.3 et 2.5.4)
 
 Ces chiffres correspondent à l'état de la checklist au moment de l'établissement du plan. La checklist n'étant pas connectée au dépôt, ils ne se mettent pas à jour seuls et doivent être revérifiés à la main si le plan évolue.
