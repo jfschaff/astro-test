@@ -98,6 +98,12 @@ Autres consignes de style :
 
 ---
 
+## Points à vérifier ou à compléter
+
+Dans les fichiers de ce dossier (`guide.md`, `PLAN.md`…), un point à vérifier ou à compléter est signalé par le symbole **✍️**, placé juste devant le passage concerné, avec si besoin une courte précision (ex. « ✍️ délai à confirmer avec le DPO »). On supprime le symbole dès que le point est vérifié ou complété. Aucun ✍️ ne doit subsister dans une partie au moment de sa publication.
+
+---
+
 ## Renvois au référentiel CNIL
 
 Après chaque paragraphe ou section du guide traitant d'un ou plusieurs point(s) du référentiel, on ajoute une ligne en italique :
