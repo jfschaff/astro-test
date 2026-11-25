@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="x-apple-disable-message-reformatting">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<!--
+  Email1 — information individuelle des patients historiques de l'EDS La Réunion.
+  Envoi : API Orange Contact Everyone.
+  Objet proposé : Vos données de santé au CHU de La Réunion : ce qui change pour la recherche
+  Sources : Notice_information_EDS_RGPD.pdf ; MAJ-livret_accueil_patient-EDS-2026-v1.0.pdf ;
+            SMS1 (URL https://eds.chu-reunion.fr/info) ; email d'information du CHU de Poitiers (structure).
+  Images : avant envoi, remplacer les chemins relatifs par des URL absolues hébergées
+           (ex. https://eds.chu-reunion.fr/images/...), ou par des pièces jointes en ligne (cid:) si l'API le permet.
+-->
+<title>Vos données de santé au CHU de La Réunion</title>
+<style>
+  /* Réinitialisations courantes pour les clients de messagerie */
+  html, body { margin: 0 !important; padding: 0 !important; width: 100% !important; }
+  body { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-color: #FFFFFF; }
+  table { border-collapse: collapse; border-spacing: 0; border: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+  td { padding: 0; }
+  .logo-cell { vertical-align: middle; }
+  .box-table { width: 100%; margin: 0 0 24px 0; }
+  img { border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; display: block; }
+  a { color: #114B82; }
+
+  /* Couleurs EDS La Réunion : navy #003363, navy-mid #114B82, accent #00A3DA, gray-100 #F5F5F5, gray-200 #D9D9D9 */
+  .wrapper  { width: 100%; background-color: #FFFFFF; }
+  .container { width: 100%; background-color: #FFFFFF; }
+  .preheader { display: none !important; visibility: hidden; opacity: 0; color: transparent; height: 0; width: 0; max-height: 0; max-width: 0; overflow: hidden; mso-hide: all; font-size: 1px; line-height: 1px; }
+
+  .content  { padding: 40px 40px 8px 40px; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; color: #1E1E1E; }
+  .content p { margin: 0 0 16px 0; }
+
+  h1 { margin: 0 0 20px 0; font-family: Arial, Helvetica, sans-serif; font-size: 26px; line-height: 32px; font-weight: bold; color: #003363; }
+  h2 { margin: 28px 0 12px 0; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: 24px; font-weight: bold; color: #003363; }
+
+  ul { margin: 0 0 16px 0; padding: 0 0 0 20px; }
+  li { margin: 0 0 8px 0; }
+
+  .button-cell { border-radius: 9999px; background-color: #003363; }
+  .button { display: inline-block; padding: 14px 28px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: bold; color: #FFFFFF !important; text-decoration: none; border-radius: 9999px; }
+
+  .box { background-color: #F5F5F5; border-left: 4px solid #00A3DA; padding: 16px 20px; }
+  .box p { margin: 0 0 8px 0; }
+  .box p:last-child { margin: 0; }
+
+  .small { font-size: 13px; line-height: 19px; color: #595959; }
+
+  .header { padding: 24px 40px 20px 40px; border-bottom: 4px solid #00A3DA; text-align: left; }
+
+  @media screen and (max-width: 620px) {
+    .header, .content { padding-left: 20px !important; padding-right: 20px !important; }
+    h1 { font-size: 22px !important; line-height: 28px !important; }
+  }
+</style>
+</head>
+<body>
+<div class="preheader">Le CHU de La Réunion réutilise certaines données de santé pour la recherche et l'amélioration des soins. Vous pouvez vous y opposer.</div>
+
+<table role="presentation" class="wrapper">
+  <tr>
+    <td>
+      <table role="presentation" class="container">
+        <!-- En-tête : logos EDS et CHU -->
+        <tr>
+          <td class="header">
+            <table role="presentation">
+              <tr>
+                <td class="logo-cell" style="padding: 0 24px 0 0;">
+                  <a href="https://eds.chu-reunion.fr"><img src="eds-logo.png" width="124" height="68" alt="Site internet de l’EDS La Réunion"></a>
+                </td>
+                <td class="logo-cell">
+                  <a href="https://www.chu-reunion.fr"><img src="logo-chu-reunion.jpg" width="105" height="56" alt="Site internet du CHU de La Réunion"></a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Corps -->
+        <tr>
+          <td class="content">
+            <h1>Vos données font avancer la santé, la recherche et la prévention à La Réunion</h1>
+
+            <p>Madame, Monsieur,</p>
+
+            <p>Lors de votre prise en charge au CHU de La Réunion au cours des 10 dernières années, des informations vous concernant ont été recueillies. Elles peuvent être réutilisées, dans le respect du secret médical et de la réglementation sur la protection des données, pour faire progresser la recherche et améliorer les soins.</p>
+
+            <p>Pour cela, le CHU de La Réunion a mis en place un Entrepôt de Données de Santé : l'<strong>EDS La Réunion</strong>. Il rassemble, dans un espace informatique sécurisé, des données issues du dossier médical et administratif des patients.</p>
+
+            <h2>À quoi servent ces données ?</h2>
+            <ul>
+              <li>à la <strong>surveillance et à la prévention des épidémies</strong> ;</li>
+              <li>au <strong>pilotage et à l'amélioration des soins</strong> : parcours des patients, analyse de l'activité, outils d'aide à la décision, organisation de l'hôpital, amélioration des politiques publiques ;</li>
+              <li>à la <strong>recherche, aux études et aux évaluations</strong> en santé : recherches scientifiques, études épidémiologiques, qualité et sécurité des soins.</li>
+            </ul>
+            <p>Ces analyses ne servent jamais à prendre des décisions automatiques sur votre prise en charge.</p>
+
+            <h2>Comment vos données sont-elles protégées ?</h2>
+            <ul>
+              <li>Votre nom, votre prénom, votre date de naissance et vos coordonnées sont <strong>remplacés par un code</strong> : les personnes qui utilisent l'EDS ne connaissent pas votre identité.</li>
+              <li>Seules des <strong>personnes habilitées</strong> et tenues à la confidentialité peuvent y accéder. Les accès sont limités et tracés.</li>
+              <li>Les données sont hébergées par un hébergeur certifié pour les données de santé (HDS). Elles <strong>ne sont pas transférées hors de l'Union européenne</strong>.</li>
+              <li>Elles sont conservées <strong>20 ans au maximum</strong>.</li>
+            </ul>
+
+            <h2>Quels sont vos droits ?</h2>
+            <p>Vous pouvez à tout moment <strong>vous opposer</strong> à la réutilisation de vos données, sans avoir à vous justifier. Votre choix n'aura <strong>pas de conséquence sur votre prise en charge</strong> habituelle au CHU de La Réunion.</p>
+            <p>Vous disposez aussi d'un droit d'accès, ✍️ (Samir) de rectification, d'effacement et de limitation du traitement de vos données. Si vous acceptez que vos données soient réutilisées, vous n'avez aucune démarche à faire.</p>
+
+            <!-- Bouton -->
+            <table role="presentation" style="margin: 24px 0 28px 0;">
+              <tr>
+                <td class="button-cell">
+                  <a class="button" href="https://eds.chu-reunion.fr/info">Tout savoir et exercer vos droits ✍️ (lien)</a>
+                </td>
+              </tr>
+            </table>
+
+            <table role="presentation" class="box-table">
+              <tr>
+                <td class="box">
+                  <p><strong style="color:#003363;">Une question ? Contactez le Délégué à la protection des données (DPO)</strong></p>
+                  <p>Par courriel : <a href="mailto:dpo.edsreunion@chu-reunion.fr">dpo.edsreunion@chu-reunion.fr</a></p>
+                  <p>Par courrier : DPO – CHU de La Réunion, Direction Générale, 11 rue de l'Hôpital, 97460 Saint-Paul</p>
+                </td>
+              </tr>
+            </table>
+
+            <p>Les projets menés avec les données de l'EDS sont publiés sur le <a href="https://eds.chu-reunion.fr/portail-de-transparence">portail de transparence</a> ✍️ (lien).</p>
+
+            <p class="small">Si vous estimez que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL : <a href="https://www.cnil.fr/fr/plaintes">www.cnil.fr/fr/plaintes</a>.</p>
+
+            <p class="small">Ce message vous est adressé par le CHU de La Réunion, responsable du traitement, pour vous informer individuellement. Il est envoyé automatiquement : merci de ne pas y répondre.</p>
+
+            <p class="small" style="padding-bottom: 24px;">CHU de La Réunion – Allée des Topazes – 97400 Saint-Denis<br>
+              <a href="https://eds.chu-reunion.fr">eds.chu-reunion.fr</a><br>
+              <a href="https://www.chu-reunion.fr">www.chu-reunion.fr</a></p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
