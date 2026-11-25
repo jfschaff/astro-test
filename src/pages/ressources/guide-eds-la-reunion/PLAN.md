@@ -255,7 +255,7 @@ Contenu pressenti : les listes exhaustives et les formulations juridiques préci
 
 | Annexe | Contenu | Points sources |
 |---|---|---|
-| A | *Finalités de l'EDS La Réunion* — reproduction intégrale de `finalités.md` (F1 à F9), sans reformulation | 3.1.2, 3.1.3, dérogations F6/F8/F9 (`derogations.md`) — statut de F5 à confirmer, voir *Sujets ouverts* |
+| A | *Finalités de l'EDS La Réunion* — reproduction intégrale de `finalités.md` (F1 à F9, dépôt `eds-reunion`, dossier `Demande d'autorisation CNIL`), sans reformulation | 3.1.2, 3.1.3, dérogations F6/F8/F9 (`derogations.md`) — statut de F5 à confirmer, voir *Sujets ouverts* |
 | B | Les catégories de données pouvant figurer dans l'EDS | 5.2.1.1, 5.2.1.2, 5.2.2 |
 
 ---

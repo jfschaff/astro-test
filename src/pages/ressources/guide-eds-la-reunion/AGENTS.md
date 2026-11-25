@@ -21,12 +21,11 @@ Le guide explique le fonctionnement de l'entrepôt de données de santé du CHU 
 
 Ce dossier fonctionne avec le dossier `doc/obsidian/Conception/Demande d'autorisation CNIL/` du dépôt `eds-reunion` (chemin local : `c:\Users\199620\dev\eds-reunion\doc\obsidian\Conception\Demande d'autorisation CNIL\`), qui prépare le formulaire de demande d'autorisation CNIL de l'EDS La Réunion et ses livrables. La dépendance est réciproque : les règles de travail de ce dossier lié sont dans son propre `AGENTS.md`.
 
-- Le dossier lié utilise ce dossier comme source. En particulier :
-  - `derogations.md` alimente les écarts au référentiel (§5 du formulaire) et la liste des non-conformités ;
-  - `finalités.md` alimente les finalités (§1) ;
-  - `guide.md` alimente l'information et les droits des personnes, la réidentification, les accès et la sécurité (§4, §6, §11, §14).
-- Les finalités et les dérogations sont définies **ici, et seulement ici**. Le dossier lié les cite sans les recopier ni les modifier.
-- Toute modification de `derogations.md` ou de `finalités.md` peut rendre le formulaire CNIL incohérent : la signaler au mainteneur pour qu'il la reporte dans le dossier lié.
+- Le dossier lié contient les deux fichiers de référence dont le guide dépend :
+  - `finalités.md` : les finalités F1 à F9 de l'EDS La Réunion, que l'annexe *Finalités de l'EDS La Réunion* reproduit intégralement ;
+  - `derogations.md` : les dérogations au référentiel CNIL et leur justification (`DER-3.1.2`, `DER-5.2.1.1`…), auxquelles le guide renvoie.
+- Les finalités et les dérogations sont définies **dans le dossier lié, et seulement là**. Le guide les cite ou les reproduit sans les reformuler ni les modifier. Une finalité ou une dérogation nouvelle, modifiée ou contredite par le guide est signalée au mainteneur, qui met à jour le dossier lié.
+- En sens inverse, le dossier lié utilise `guide.md` comme source pour l'information et les droits des personnes, la réidentification, les accès et la sécurité (§1, §4, §6, §11, §14 du formulaire). Toute modification de ces passages peut rendre le formulaire CNIL incohérent : la signaler au mainteneur pour qu'il la reporte dans le dossier lié.
 - Ne pas modifier les fichiers du dossier lié depuis ce dossier sans demande explicite du mainteneur.
 
 ---
